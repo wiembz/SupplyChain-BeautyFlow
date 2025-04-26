@@ -8,11 +8,16 @@ import { HomePageComponent } from './Home/home-page/home-page.component';
 import { LMDashComponent } from './LM/lmdash/lmdash.component';
 import { PredictComponent } from './SCPM/predict/predict.component';
 import { SCPMDashComponent } from './SCPM/scpmdash/scpmdash.component';
+import { SerieComponent } from './serie/serie.component';
+import { PredictorComponent } from './predictor/predictor.component';
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'predict', component: PredictComponent },
+  {path : 'serie' ,component: SerieComponent},
+  { path: 'predict', component: PredictComponent },
+  {path : 'prediction' , component : PredictorComponent},
   { path: 'home', component: HomePageComponent },
 { path: 'lm',component :LMDashComponent}  ,
 { path: 'CPO', component: CPODashComponent },

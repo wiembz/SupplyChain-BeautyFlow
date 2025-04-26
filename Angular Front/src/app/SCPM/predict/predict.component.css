@@ -1,125 +1,20 @@
 /* Creative Predict Styles */
 :host {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  background-color: #f7f7f7;
+  background: linear-gradient(135deg, #fdf1f5 0%, #fbf8fd 100%);
   font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.dashboard-page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
-}
-
-.main-content {
-  padding-top: 64px; /* Same as header height */
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  overflow-y: auto;
-}
-
-/* SCPM Dashboard Header Styles - Consistent between pages */
-.scpm-dashboard {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  background-color: #f7f7f7;
-}
-
-.dashboard-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 24px;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  z-index: 1000;
-  height: 64px; /* Fixed height for header */
-}
-
-.logo-section {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dashboard-title {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 600;
-  color: #333;
-  background: linear-gradient(90deg, #333 0%, #a67c7c 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.action-buttons {
-  display: flex;
-  gap: 12px;
-}
-
-.action-buttons .predict-button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: linear-gradient(90deg, #a67c7c 0%, #8e6565 100%);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 16px;
-  font-weight: 600;
-  font-size: 14px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-  height: auto;
-}
-
-.action-buttons .predict-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(90deg, #8e6565 0%, #755252 100%);
-}
-
-.action-buttons .predict-button svg {
-  transition: transform 0.3s ease;
-}
-
-.action-buttons .predict-button:hover svg {
-  transform: translateX(-3px);
-}
-
-/* Predict Container Styles */
-.predict-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   padding: 20px;
-  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .creative-predict-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  position: relative;
   width: 100%;
+  max-width: 850px;
+  min-height: 600px;
 }
 
 /* Animated Background Bubbles */
@@ -176,7 +71,6 @@
   z-index: 1;
 }
 
-/* Header and Navigation Styles */
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -204,34 +98,6 @@
   background-clip: text;
 }
 
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.back-button {
-  display: flex;
-  align-items: center;
-  background: none;
-  border: 1px solid #eee;
-  padding: 8px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  color: #555;
-  transition: all 0.2s;
-}
-
-.back-button svg {
-  margin-right: 6px;
-}
-
-.back-button:hover {
-  background: #f9f0f4;
-  border-color: #f0d0e0;
-}
-
 .logout-button {
   background: none;
   border: none;
@@ -247,16 +113,7 @@
 
 /* Content Styles */
 .predict-content {
-  flex: 1;
-  padding: 30px;
-  max-width: 850px;
-  margin: 0 auto;
-  width: 100%;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 30px 40px 40px;
 }
 
 .predict-title {
@@ -268,7 +125,7 @@
 }
 
 .highlight {
-  color: #a67c7c;
+  color: #FF6A95;
 }
 
 .predict-subtitle {
@@ -351,34 +208,6 @@
   cursor: not-allowed;
 }
 
-form .predict-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(90deg, #a67c7c 0%, #8e6565 100%);
-  color: white;
-  border: none;
-  border-radius: 14px;
-  padding: 16px;
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 10px;
-  transition: all 0.3s;
-  cursor: pointer;
-  height: 54px;
-}
-
-form .predict-button:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(142, 101, 101, 0.3);
-  background: linear-gradient(90deg, #8e6565 0%, #755252 100%);
-}
-
-form .predict-button:disabled {
-  background: linear-gradient(90deg, #e0e0e0, #d0d0d0);
-  cursor: not-allowed;
-}
-
 /* Loading Spinner */
 .loading-spinner {
   width: 20px;
@@ -443,7 +272,7 @@ form .predict-button:disabled {
 }
 
 .product-name {
-  color: #a67c7c;
+  color: #FF6A95;
 }
 
 .result-cards {
@@ -463,7 +292,7 @@ form .predict-button:disabled {
 }
 
 .result-item.temperature {
-  border-left: 4px solid #a67c7c;
+  border-left: 4px solid #FF6A95;
 }
 
 .result-item.humidity {
@@ -525,67 +354,6 @@ form .predict-button:disabled {
   color: #FF6A95;
 }
 
-/* Power BI Integration */
-.powerbi-integration {
-  margin-top: 25px;
-  position: relative;
-}
-
-.powerbi-toggle-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background: #f2f2f7;
-  border: none;
-  border-radius: 10px;
-  padding: 12px;
-  color: #555;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-  gap: 8px;
-  z-index: 2;
-  position: relative;
-}
-
-.powerbi-toggle-button:hover {
-  background: #e8e8f0;
-}
-
-.powerbi-toggle-button svg {
-  transition: transform 0.3s;
-}
-
-.powerbi-container {
-  position: fixed;
-  top: 64px; /* Position below the header */
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  z-index: 1000;
-  overflow: hidden;
-  animation: expandFullScreen 0.3s ease-out;
-}
-
-.powerbi-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-@keyframes expandFullScreen {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .result-cards {
@@ -599,32 +367,6 @@ form .predict-button:disabled {
 
   .predict-title {
     font-size: 24px;
-  }
-
-  .back-button span {
-    display: none;
-  }
-
-  .back-button svg {
-    margin-right: 0;
-  }
-
-  .powerbi-container {
-    height: 350px;
-  }
-
-  .dashboard-title {
-    font-size: 16px;
-  }
-
-  .action-buttons .predict-button {
-    padding: 8px 12px;
-    font-size: 13px;
-  }
-
-  .predict-content {
-    padding: 20px;
-    margin-top: 15px;
   }
 }
 
@@ -648,21 +390,5 @@ form .predict-button:disabled {
 
   .logo-text {
     font-size: 18px;
-  }
-
-  .powerbi-container {
-    height: 300px;
-  }
-
-  .dashboard-header {
-    padding: 10px 16px;
-  }
-
-  .dashboard-title {
-    font-size: 14px;
-    max-width: 180px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 }

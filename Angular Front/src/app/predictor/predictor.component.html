@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Prédiction du TotalAmount</h2>
+
+  <form (ngSubmit)="onSubmit()">
+    <label>Nom du Shop:</label>
+    <input type="text" [(ngModel)]="shopname" name="shopname" required>
+
+    <label>Date:</label>
+    <input type="date" [(ngModel)]="date" name="date" required>
+
+    <button type="submit">Prédire</button>
+  </form>
+
+  <p *ngIf="total_amount !== null">Montant prédit : {{ total_amount }} TND</p>
+  <p *ngIf="errorMessage">{{ errorMessage }}</p>
+
+
+  <div *ngIf="errorMessage">
+    <p style="color: red">{{ errorMessage }}</p>
+  </div>
+</div>

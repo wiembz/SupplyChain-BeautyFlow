@@ -15,6 +15,11 @@ import { LoadingScreenComponent } from './loading-screen/loading-screen.componen
 import { PMComponent } from './ProcurementManager/pm/pm.component';
 import { PredictComponent } from './SCPM/predict/predict.component';
 import { SCPMDashComponent } from './SCPM/scpmdash/scpmdash.component';
+import { SerieComponent } from './serie/serie.component';
+import { MyChartComponent } from './my-chart/my-chart.component';
+import { PredictorComponent } from './predictor/predictor.component';
+import { NgChartsModule } from 'ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +33,10 @@ import { SCPMDashComponent } from './SCPM/scpmdash/scpmdash.component';
     SCPMDashComponent,
     LMDashComponent,
     PMComponent,
-    LoadingScreenComponent
+    LoadingScreenComponent,
+    SerieComponent,
+    MyChartComponent,
+    PredictorComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +46,8 @@ import { SCPMDashComponent } from './SCPM/scpmdash/scpmdash.component';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgChartsModule
   ],
   providers: [
     {

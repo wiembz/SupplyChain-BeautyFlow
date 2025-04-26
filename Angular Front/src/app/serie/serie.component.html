@@ -1,0 +1,89 @@
+<div class="creative-predict-wrapper">
+  <div class="creative-predict-container">  <div class="predict-bubble"></div>
+  <div class="predict-bubble bubble-2"></div>
+  <div class="predict-bubble bubble-3"></div>
+  
+  <div class="predict-card">
+    <div class="card-header">
+      <div class="logo-area">
+        <div class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#FC8EAC" stroke-width="2"/>
+            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#FC8EAC"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="predict-content">
+      <h2 class="predict-title">
+        <span class="highlight">Prévision</span> des prix des matiére premiére
+      </h2>
+<br>
+<br>
+      <form (ngSubmit)="getSerie()" class="predict-form">
+        <div class="form-floater">
+          <label for="material">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="#FF6A95" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="#FF6A95" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Nom de matiére premiére :
+          </label>
+          <select [(ngModel)]="material" name="material" id="material" required>
+            <option value="">-- Sélectionner --</option>
+            <option *ngFor="let mat of materials" [value]="mat">{{ mat }}</option>
+          </select>
+        </div>
+        <br>
+        <br>
+        <div class="form-floater">
+          <label for="steps">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#5E9EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 6V12L16 14" stroke="#5E9EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Période (mois) :
+          </label>
+          <input id="steps" [(ngModel)]="steps" name="steps" type="number" min="1" placeholder="Nombre de mois à prévoir" required>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button (click)="getSerie()" class="predict-button">Afficher la prévision </button>
+      </form>
+
+      <div *ngIf="error" class="error-message">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M15 9L9 15" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9 9L15 15" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        {{ error }}
+      </div>
+
+      <div *ngIf="forecast.length" class="prediction-result">
+        <div class="result-heading">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 11.0801V12.0001C21.9988 14.1565 21.3005 16.2548 20.0093 17.9819C18.7182 19.7091 16.9033 20.9726 14.8354 21.584C12.7674 22.1954 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2462 3.61096 17.4372C2.43727 15.6281 1.87979 13.4882 2.02168 11.3364C2.16356 9.18467 2.99721 7.13643 4.39828 5.49718C5.79935 3.85793 7.69279 2.71549 9.79619 2.24025C11.8996 1.76502 14.1003 1.98245 16.07 2.86011" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 4L12 14.01L9 11.01" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Prévision de consommation pour <span class="product-name">{{ material }}</span></h3>
+        </div>
+
+        <div class="chart-container">
+          <canvas baseChart
+                  [data]="chartData"
+                  [options]="chartOptions"
+                  [type]="'line'">
+          </canvas>
+        </div>
+
+        <div class="recommendation">
+          <p>Cette projection sur <strong>{{ steps }} mois</strong> vous permet d'anticiper vos besoins en matériel et d'optimiser votre gestion des stocks.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
