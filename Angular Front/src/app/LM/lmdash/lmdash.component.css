@@ -53,6 +53,7 @@ html, body {
   gap: 12px;
 }
 
+.prediction-button,
 .logout-button {
   display: flex;
   align-items: center;
@@ -69,16 +70,19 @@ html, body {
   transition: all 0.3s ease;
 }
 
+.prediction-button:hover,
 .logout-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background: linear-gradient(90deg, #8e6565 0%, #755252 100%);
 }
 
+.prediction-button svg,
 .logout-button svg {
   transition: transform 0.3s ease;
 }
 
+.prediction-button:hover svg,
 .logout-button:hover svg {
   transform: translateX(3px);
 }
@@ -97,6 +101,7 @@ html, body {
     font-size: 16px;
   }
 
+  .prediction-button,
   .logout-button {
     padding: 8px 12px;
     font-size: 13px;
@@ -114,5 +119,15 @@ html, body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .prediction-button,
+  .logout-button {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .action-buttons {
+    gap: 8px;
   }
 }

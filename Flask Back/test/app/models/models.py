@@ -12,6 +12,7 @@ def get_db_connection():
     )
     return conn
 
+
 def get_user_by_username(username):
     conn = get_db_connection()
     cur = conn.cursor()

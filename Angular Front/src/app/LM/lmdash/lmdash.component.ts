@@ -21,6 +21,10 @@ export class LMDashComponent {
   );
     }
 
+    goToPredictor() {
+      this.router.navigate(['/prediction']);
+    }
+
     logout() {
       this.authService.logout();
       this.router.navigate(['/login']);

@@ -2,19 +2,24 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgChartsModule } from 'ng2-charts';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { COODashComponent } from './COO/coodash/coodash.component';
+import { MyChartComponent } from './COO/my-chart/my-chart.component';
+import { SerieComponent } from './COO/serie/serie.component';
 import { CPODashComponent } from './CPO/cpodash/cpodash.component';
 import { HomePageComponent } from './Home/home-page/home-page.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { LMDashComponent } from './LM/lmdash/lmdash.component';
+import { PredictorComponent } from './LM/predictor/predictor.component';
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
 import { PMComponent } from './ProcurementManager/pm/pm.component';
 import { PredictComponent } from './SCPM/predict/predict.component';
 import { SCPMDashComponent } from './SCPM/scpmdash/scpmdash.component';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +33,10 @@ import { SCPMDashComponent } from './SCPM/scpmdash/scpmdash.component';
     SCPMDashComponent,
     LMDashComponent,
     PMComponent,
-    LoadingScreenComponent
+    LoadingScreenComponent,
+    SerieComponent,
+    MyChartComponent,
+    PredictorComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +46,8 @@ import { SCPMDashComponent } from './SCPM/scpmdash/scpmdash.component';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgChartsModule
   ],
   providers: [
     {

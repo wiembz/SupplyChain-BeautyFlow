@@ -3,9 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { COODashComponent } from './COO/coodash/coodash.component';
+import { SerieComponent } from './COO/serie/serie.component';
 import { CPODashComponent } from './CPO/cpodash/cpodash.component';
 import { HomePageComponent } from './Home/home-page/home-page.component';
 import { LMDashComponent } from './LM/lmdash/lmdash.component';
+import { PredictorComponent } from './LM/predictor/predictor.component';
 import { PredictComponent } from './SCPM/predict/predict.component';
 import { SCPMDashComponent } from './SCPM/scpmdash/scpmdash.component';
 const routes: Routes = [
@@ -13,6 +15,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'predict', component: PredictComponent },
+  {path : 'serie' ,component: SerieComponent},
+  { path: 'predict', component: PredictComponent },
+  {path : 'prediction' , component : PredictorComponent},
   { path: 'home', component: HomePageComponent },
 { path: 'lm',component :LMDashComponent}  ,
 { path: 'CPO', component: CPODashComponent },
