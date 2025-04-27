@@ -1,40 +1,32 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from '../../services/auth.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  loginForm = {
-    username: '',
-    password: '',
-    rememberMe: false
-  };
-
-  showPassword = false;
+  username: string = '';
+  password: string = '';
 
   constructor(private authService: AuthService, private router: Router) {}
 
+  login() {
+    this.authService.login(this.username, this.password).subscribe({
+      next: (res) => {
+        this.authService.saveToken(res.access_token);
+        this.router.navigate(['/predict']); // ou autre route
+      },
+      error: (err) => {
+        console.error('Erreur de connexion', err);
+        alert('Identifiants invalides !');
+      }
+    });
+  }
+  showPassword = false;
+
   togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
-  }
-
-  onLogin() {
-    this.authService.login({
-      username: this.loginForm.username,
-      password: this.loginForm.password
-    }).subscribe(
-      () => {
-        console.log('Connexion réussie');
-        this.router.navigate(['/home']);
-      },
-      (error) => {
-        console.error('Échec de la connexion :', error);
-        alert('Nom d\'utilisateur ou mot de passe incorrect');
-      }
-    );
   }
 }

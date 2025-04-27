@@ -5,7 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
 import { COODashComponent } from './COO/coodash/coodash.component';
 import { CPODashComponent } from './CPO/cpodash/cpodash.component';
 import { HomePageComponent } from './Home/home-page/home-page.component';
@@ -26,7 +25,6 @@ import { NgChartsModule } from 'ng2-charts';
     AppComponent,
     PredictComponent,
     LoginComponent,
-    RegisterComponent,
     HomePageComponent,
     CPODashComponent,
     COODashComponent,

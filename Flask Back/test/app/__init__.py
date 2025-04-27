@@ -15,7 +15,6 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object('config.Config')
 
-    CORS(app, origins="http://localhost:4200", supports_credentials=True)
     
     db.init_app(app)  # ✅ Initialise l'instance SQLAlchemy AVEC le contexte d'app
     JWTManager(app)

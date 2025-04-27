@@ -518,7 +518,7 @@
           <p class="subtitle">Connectez-vous à votre espace personnel</p>
         </div>
 
-        <form (ngSubmit)="onLogin()">
+        <form (ngSubmit)="login()">
           <div class="form-group">
             <label for="username">Nom d'utilisateur</label>
             <div class="input-wrapper">
@@ -527,7 +527,7 @@
                 id="username"
                 class="form-control"
                 placeholder="Entrez votre nom d'utilisateur"
-                [(ngModel)]="loginForm.username"
+                [(ngModel)]="username"
                 name="username"
                 required
                 autocomplete="username">
@@ -545,7 +545,7 @@
                 id="password"
                 class="form-control"
                 placeholder="Entrez votre mot de passe"
-                [(ngModel)]="loginForm.password"
+                [(ngModel)]="password"
                 name="password"
                 required
                 autocomplete="current-password">
@@ -566,12 +566,12 @@
             </div>
           </div>
 
-          <div class="remember-me">
+          <!-- <div class="remember-me">
             <input type="checkbox" id="remember" [(ngModel)]="loginForm.rememberMe" name="rememberMe">
             <label for="remember">Se souvenir de moi</label>
-          </div>
+          </div> -->
 
-          <button type="button" class="login-button" (click)="onLogin()">
+          <button type="button" class="login-button" (click)="login()">
             Se connecter
           </button>
 
