@@ -22,7 +22,8 @@ def login():
         access_token = create_access_token(identity=str(user[0]), additional_claims={'role': user[2]})
         return jsonify({
             'message': 'Connexion réussie',
-            'access_token': access_token
+            'access_token': access_token,
+            'role': user[2]  # Ajouter le rôle dans la réponse
         }), 200
 
     return jsonify({'error': 'Identifiants invalides'}), 401

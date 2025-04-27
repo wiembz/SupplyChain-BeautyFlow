@@ -2,6 +2,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +24,16 @@ export class AuthService {
       }
     );
   }
-
+ 
+  addDecideur(decideurData: any): Observable<any> {
+    const headers = new HttpHeaders(
+    {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${localStorage.getItem('access_token')}`
+    });
+    
+    return this.http.post(`${this.apiUrl}/add_decideur`, decideurData, { headers });
+  }
   saveToken(token: string) {
     localStorage.setItem('access_token', token);
   }
@@ -32,12 +42,51 @@ export class AuthService {
     return localStorage.getItem('access_token');
   }
 
+  hasRole(expectedRoles: string | string[]): boolean {
+    const userRole = this.getRole();
+    
+    if (!userRole) return false;
+
+    if (Array.isArray(expectedRoles)) {
+      return expectedRoles.includes(userRole);
+    }
+    return userRole === expectedRoles;
+  }
+  saveRole(role: string) {
+    localStorage.setItem('role', role);
+  }
+
+  getRole(): string {
+    return localStorage.getItem('role') || '';
+  }
+
+  isSuperviseur(): boolean {
+    return this.getRole() === 'superviseur';
+  }
+
+  isCOO(): boolean {
+    return this.getRole() === 'COO';
+  }
+
+  isCPO(): boolean {
+    return this.getRole() === 'CPO';
+  }
+ 
+  isSCPM(): boolean {
+    return this.getRole() === 'SCPM';
+  }
+  isLM(): boolean {
+    return this.getRole() === 'LM';
+  }
+
+
   isLoggedIn(): boolean {
     return !!this.getToken();
   }
 
   logout() {
     localStorage.removeItem('access_token');
+    localStorage.removeItem('role');
     this.router.navigate(['/login']);
   }
 

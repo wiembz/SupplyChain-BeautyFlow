@@ -1,0 +1,57 @@
+<!-- src/app/components/add-decideur/add-decideur.component.html -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="text-center">Ajouter un Décideur</h3>
+          </div>
+          <div class="card-body">
+            <form (ngSubmit)="onSubmit()">
+              <!-- Error Message -->
+              <div *ngIf="errorMessage" class="alert alert-danger">
+                {{ errorMessage }}
+              </div>
+              
+              <!-- Success Message -->
+              <div *ngIf="successMessage" class="alert alert-success">
+                {{ successMessage }}
+              </div>
+  
+              <!-- Username Field -->
+              <div class="form-group">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" class="form-control" id="username" 
+                       [(ngModel)]="decideur.username" name="username" required>
+              </div>
+  
+              <!-- Email Field -->
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" 
+                       [(ngModel)]="decideur.email" name="email" required>
+              </div>
+  
+              <!-- Password Field -->
+              <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" class="form-control" id="password" 
+                       [(ngModel)]="decideur.password" name="password" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Rôle</label>
+                <select class="form-select" [(ngModel)]="decideur.role" name="role">
+                  <option *ngFor="let role of roles" [value]="role">{{role}}</option>
+                </select>
+              </div>
+  
+              <!-- Role Field (hidden since it's fixed in backend) -->
+              <input type="hidden" [(ngModel)]="decideur.role" name="role">
+  
+              <button type="submit" class="btn btn-primary btn-block">Ajouter</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -18,7 +18,8 @@ import { SerieComponent } from './serie/serie.component';
 import { MyChartComponent } from './my-chart/my-chart.component';
 import { PredictorComponent } from './predictor/predictor.component';
 import { NgChartsModule } from 'ng2-charts';
-
+import { AccessDeniedComponent } from './access-denied/access-denied.component';
+import { AddDecideurComponent } from './add-decideur/add-decideur.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,11 @@ import { NgChartsModule } from 'ng2-charts';
     LoadingScreenComponent,
     SerieComponent,
     MyChartComponent,
-    PredictorComponent
+    PredictorComponent,
+    AccessDeniedComponent,
+    AddDecideurComponent,
+  
+    
   ],
   imports: [
     BrowserModule,
