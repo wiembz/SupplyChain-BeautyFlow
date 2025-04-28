@@ -33,7 +33,7 @@
   background: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   z-index: 1000;
-  height: 64px;
+  height: 64px; /* Fixed height for header */
   width: 100%;
   position: fixed;
   top: 0;
@@ -67,24 +67,32 @@
 .action-buttons {
   display: flex;
   gap: 12px;
+  align-items: center;
+  height: 100%;
 }
 
 .action-buttons .predict-button,
 .action-buttons .logout-button {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   background: linear-gradient(90deg, #a67c7c 0%, #8e6565 100%);
   color: white;
   border: none;
   border-radius: 8px;
-  padding: 10px 16px;
+  padding: 8px 16px;
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
-  height: auto;
+  height: 40px; /* Fixed height for consistent button sizing */
+  white-space: nowrap;
+}
+
+.action-buttons .logout-button {
+  background: linear-gradient(90deg, #8e6565 0%, #755252 100%);
 }
 
 .action-buttons .predict-button:hover,
@@ -410,6 +418,7 @@ form .predict-button:disabled {
   .action-buttons .logout-button {
     padding: 8px 12px;
     font-size: 13px;
+    height: 36px; /* Slightly smaller for medium screens */
   }
 }
 
@@ -428,8 +437,17 @@ form .predict-button:disabled {
 
   .action-buttons .predict-button,
   .action-buttons .logout-button {
-    padding: 8px 10px;
+    padding: 6px 10px;
     font-size: 12px;
+    height: 32px; /* Even smaller for tiny screens */
+  }
+
+  .action-buttons .logout-button span {
+    display: none; /* Hide text on small screens */
+  }
+
+  .action-buttons .logout-button svg {
+    margin: 0; /* Center icon when text is hidden */
   }
 
   .action-buttons {

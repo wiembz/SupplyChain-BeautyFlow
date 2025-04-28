@@ -1,6 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* Global color theme based on #755252 */
+:root {
+  --primary-color: #755252;
+  --primary-light: #866262;
+  --primary-dark: #644343;
+  --primary-darker: #533535;
+  --primary-lightest: #d9bcbc;
+  --primary-bg: #f8f3f3;
+  --primary-text: #2b2020;
+  --primary-gradient: linear-gradient(135deg, #755252 0%, #866262 50%, #644343 100%);
+  --primary-gradient-reverse: linear-gradient(135deg, #644343 0%, #755252 50%, #866262 100%);
+  --primary-shadow: 0 4px 10px rgba(117, 82, 82, 0.4);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -106,4 +120,55 @@ button, input, select, textarea {
 
 .separator::after {
   margin-left: 10px;
+}
+
+/* Apply color theme to common UI elements */
+button.themed-button {
+  background: var(--primary-gradient);
+  color: white;
+  border: 1px solid var(--primary-light);
+  box-shadow: var(--primary-shadow);
+  transition: all 0.3s ease;
+}
+
+button.themed-button:hover {
+  background: var(--primary-gradient-reverse);
+  box-shadow: 0 6px 15px rgba(117, 82, 82, 0.5);
+}
+
+.themed-card {
+  border: 1px solid var(--primary-light);
+  box-shadow: var(--primary-shadow);
+  background-color: white;
+}
+
+.themed-card-header {
+  background: var(--primary-gradient);
+  color: white;
+}
+
+.themed-badge {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.themed-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(117, 82, 82, 0.25);
+}
+
+.themed-link {
+  color: var(--primary-dark);
+}
+
+.themed-link:hover {
+  color: var(--primary-darker);
+}
+
+.themed-bg {
+  background-color: var(--primary-bg);
+}
+
+.themed-text {
+  color: var(--primary-color);
 }

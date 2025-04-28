@@ -21,6 +21,12 @@ export class CPODashComponent {
 );
   }
 
+  ngOnInit(): void {
+  }
+  navigateToPrediction(): void {
+    this.router.navigate(['/serie']);
+  }
+
   logout() {
     this.authService.logout();
     this.router.navigate(['/login']);

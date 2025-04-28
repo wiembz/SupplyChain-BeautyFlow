@@ -10,11 +10,11 @@ import { SerieService } from '../../services/serie.service';
   styleUrls: ['./serie.component.css']
 })
 export class SerieComponent implements OnInit {
-  material: string = '';      // Le matériau sélectionné
-  steps: number = 12;          // Nombre de mois à prédire
-  forecast: number[] = [];     // Résultats de prévision
-  error: string | null = null; // Erreur éventuelle
-  materials: string[] = [];    // Liste des matériaux disponibles
+  material: string = '';      // Selected material
+  steps: number = 12;         // Number of months to predict
+  forecast: number[] = [];    // Forecast results
+  error: string | null = null; // Possible error
+  materials: string[] = [];   // List of available materials
 
   chartData: ChartData<'line'> = {
     labels: [],
@@ -26,7 +26,7 @@ export class SerieComponent implements OnInit {
     plugins: {
       title: {
         display: true,
-        text: 'Prévision des prix des matières premières'
+        text: 'Raw Material Price Forecast'
       },
       legend: {
         display: true,
@@ -37,7 +37,7 @@ export class SerieComponent implements OnInit {
       x: {
         title: {
           display: true,
-          text: 'Mois'
+          text: 'Months'
         },
         ticks: {
           autoSkip: true
@@ -52,7 +52,7 @@ export class SerieComponent implements OnInit {
         },
         title: {
           display: true,
-          text: 'Prix simulé (€)'
+          text: 'Simulated Price (€)'
         }
       }
     }
@@ -65,7 +65,7 @@ export class SerieComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    // Charger la liste des matériaux au chargement du composant
+    // Load the list of materials when the component is loaded
     this.loadMaterials();
   }
 
@@ -75,14 +75,14 @@ export class SerieComponent implements OnInit {
         this.materials = data;
       },
       error: (err) => {
-        console.error('Erreur en récupérant les matériaux :', err);
+        console.error('Error retrieving materials:', err);
       }
     });
   }
 
   getSerie() {
     if (!this.material) {
-      this.error = 'Veuillez sélectionner un matériau.';
+      this.error = 'Please select a material.';
       return;
     }
 
@@ -91,13 +91,13 @@ export class SerieComponent implements OnInit {
         this.forecast = data.forecast;
         this.error = null;
 
-        const labels = Array.from({ length: this.steps }, (_, i) => `Mois ${i + 1}`);
+        const labels = Array.from({ length: this.steps }, (_, i) => `Month ${i + 1}`);
 
         this.chartData = {
           labels,
           datasets: [{
             data: this.forecast,
-            label: `Prévision - ${this.material}`,
+            label: `Forecast - ${this.material}`,
             borderColor: '#ff6a95',
             backgroundColor: 'rgba(252, 142, 172, 0.2)',
             tension: 0.3,
@@ -115,13 +115,13 @@ export class SerieComponent implements OnInit {
       },
       error: (err) => {
         this.forecast = [];
-        this.error = err.error?.error || 'Erreur inconnue.';
+        this.error = err.error?.error || 'Unknown error.';
       }
     });
   }
 
   backToDashboard() {
-    this.router.navigate(['/COO']); // Navigate back to COO dashboard
+    this.router.navigate(['/CPO']); // Navigate back to CPO dashboard
   }
 
   logout() {

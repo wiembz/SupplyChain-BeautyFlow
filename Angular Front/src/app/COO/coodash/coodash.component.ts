@@ -23,11 +23,6 @@ export class COODashComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  navigateToPrediction(): void {
-    this.router.navigate(['/serie']);
-  }
-
   logout(): void {
     this.authService.logout();
     this.router.navigate(['/login']);

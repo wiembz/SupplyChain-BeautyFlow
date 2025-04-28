@@ -1,6 +1,38 @@
-<iframe
-  [src]="dashboardUrl"
-  style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; border: none;"
-  frameborder="0"
-  allowfullscreen="true"
-></iframe>
+<div class="superviseur-dashboard">
+  <header class="dashboard-header">
+    <div class="logo-section">
+      <div class="logo-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#FC8EAC" stroke-width="2"/>
+          <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#FC8EAC"/>
+        </svg>
+      </div>
+      <h1 class="dashboard-title">Supervisor Dashboard</h1>
+    </div>
+    <div class="action-buttons">
+      <button class="add-button" (click)="navigateToAddDecieurs()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 5V19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Add Decision Makers
+      </button>
+      <button class="logout-button" (click)="logout()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 17L21 12L16 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 12H9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Logout
+      </button>
+    </div>
+  </header>
+  
+  <div class="report-container">
+    <iframe 
+      [src]="dashboardUrl"
+      frameborder="0"
+      allowfullscreen="true">
+    </iframe>
+  </div>
+</div>

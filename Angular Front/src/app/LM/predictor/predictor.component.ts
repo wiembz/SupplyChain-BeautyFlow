@@ -28,7 +28,7 @@ export class PredictorComponent {
           this.errorMessage = '';
         },
         error: (error) => {
-          this.errorMessage = 'Erreur lors de la prédiction.';
+          this.errorMessage = 'Error during prediction.';
           this.total_amount = null;
         }
       });

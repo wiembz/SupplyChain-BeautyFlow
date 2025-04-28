@@ -59,8 +59,8 @@ export class PredictComponent implements OnInit {
           this.savePredictionForPowerBI();
         },
         (error) => {
-          console.error('Erreur lors de la prédiction :', error);
-          this.error = 'Une erreur est survenue lors du calcul des prédictions. Veuillez réessayer.';
+          console.error('Error during prediction:', error);
+          this.error = 'An error occurred while calculating predictions. Please try again.';
           this.isLoading = false;
         }
       );

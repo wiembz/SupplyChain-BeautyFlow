@@ -48,11 +48,13 @@ html, body {
   background-clip: text;
 }
 
+
 .action-buttons {
   display: flex;
   gap: 12px;
 }
 
+.action-buttons .predict-button,
 .logout-button {
   display: flex;
   align-items: center;

@@ -8,7 +8,7 @@ class Config:
     SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:azerty@localhost:5432/Supply_Auth'
     # Base secondaire (produits, dimensions)
     SQLALCHEMY_BINDS = {
-        'second_db': 'postgresql://postgres:123456a@localhost:5432/DIMENSIONS'
+        'second_db': 'postgresql://postgres:azerty@localhost:5432/DIMENSIONS'
     }
 
    

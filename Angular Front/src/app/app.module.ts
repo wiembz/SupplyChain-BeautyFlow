@@ -8,9 +8,9 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { COODashComponent } from './COO/coodash/coodash.component';
-import { MyChartComponent } from './COO/my-chart/my-chart.component';
-import { SerieComponent } from './COO/serie/serie.component';
 import { CPODashComponent } from './CPO/cpodash/cpodash.component';
+import { MyChartComponent } from './CPO/my-chart/my-chart.component';
+import { SerieComponent } from './CPO/serie/serie.component';
 import { HomePageComponent } from './Home/home-page/home-page.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { LMDashComponent } from './LM/lmdash/lmdash.component';
@@ -19,14 +19,16 @@ import { LoadingScreenComponent } from './loading-screen/loading-screen.componen
 import { PMComponent } from './ProcurementManager/pm/pm.component';
 import { PredictComponent } from './SCPM/predict/predict.component';
 import { SCPMDashComponent } from './SCPM/scpmdash/scpmdash.component';
+import { AccessDeniedComponent } from './auth/access-denied/access-denied.component';
+import { AddDecideurComponent } from './Superviseur/add-decideur/add-decideur.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    RegisterComponent,
     PredictComponent,
     LoginComponent,
-    RegisterComponent,
     HomePageComponent,
     CPODashComponent,
     COODashComponent,
@@ -36,7 +38,11 @@ import { SCPMDashComponent } from './SCPM/scpmdash/scpmdash.component';
     LoadingScreenComponent,
     SerieComponent,
     MyChartComponent,
-    PredictorComponent
+    PredictorComponent,
+    AccessDeniedComponent,
+    AddDecideurComponent,
+
+
   ],
   imports: [
     BrowserModule,

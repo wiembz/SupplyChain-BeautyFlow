@@ -17,7 +17,7 @@
         </svg>
         Back to Dashboard
       </button>
-      <button class="logout-button" (click)="logout()">
+      <button class="predict-button logout-button" (click)="logout()">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M16 17L21 12L16 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -30,9 +30,9 @@
 
   <div class="predict-content">
     <h2 class="predict-title">
-      <span class="highlight">Prédiction</span> de conditions optimales
+      <span class="highlight">Prediction</span> of optimal conditions
     </h2>
-    <p class="predict-subtitle">Déterminez la température et l'humidité idéales pour vos produits cosmétiques</p>
+    <p class="predict-subtitle">Determine the ideal temperature and humidity for your cosmetic products</p>
 
     <form (ngSubmit)="predict()" #predictForm="ngForm" class="predict-form">
       <div class="form-floater">
@@ -40,14 +40,14 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z" stroke="#FF6A95" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          Nom du produit
+          Product Name
         </label>
         <input
           type="text"
           id="productname"
           name="productname"
           [(ngModel)]="formData.productname"
-          placeholder="Ex: Sérum hydratant, Rouge à lèvres..."
+          placeholder="Ex: Hydrating Serum, Lipstick..."
           required
         >
       </div>
@@ -58,20 +58,20 @@
             <path d="M20.59 13.41L13.42 20.58C13.2343 20.766 13.0137 20.9135 12.7709 21.0141C12.5281 21.1148 12.2678 21.1666 12.005 21.1666C11.7422 21.1666 11.4819 21.1148 11.2391 21.0141C10.9963 20.9135 10.7757 20.766 10.59 20.58L2 12V2H12L20.59 10.59C20.9625 10.9647 21.1716 11.4716 21.1716 12C21.1716 12.5284 20.9625 13.0353 20.59 13.41Z" stroke="#5E9EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M7 7H7.01" stroke="#5E9EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          Catégorie
+          Category
         </label>
         <input
           type="text"
           id="category"
           name="category"
           [(ngModel)]="formData.category"
-          placeholder="Ex: Soins visage, Maquillage..."
+          placeholder="Ex: Facial Care, Makeup..."
           required
         >
       </div>
 
       <button type="submit" [disabled]="!predictForm.valid || isLoading" class="predict-button">
-        <span *ngIf="!isLoading">Prédire</span>
+        <span *ngIf="!isLoading">Predict</span>
         <span *ngIf="isLoading" class="loading-spinner"></span>
       </button>
     </form>
@@ -91,7 +91,7 @@
           <path d="M22 11.0801V12.0001C21.9988 14.1565 21.3005 16.2548 20.0093 17.9819C18.7182 19.7091 16.9033 20.9726 14.8354 21.584C12.7674 22.1954 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2462 3.61096 17.4372C2.43727 15.6281 1.87979 13.4882 2.02168 11.3364C2.16356 9.18467 2.99721 7.13643 4.39828 5.49718C5.79935 3.85793 7.69279 2.71549 9.79619 2.24025C11.8996 1.76502 14.1003 1.98245 16.07 2.86011" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M22 4L12 14.01L9 11.01" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <h3>Résultat calculé pour <span class="product-name">{{ formData.productname }}</span></h3>
+        <h3>Calculated result for <span class="product-name">{{ formData.productname }}</span></h3>
       </div>
 
       <div class="result-cards">
@@ -103,9 +103,9 @@
             </svg>
           </div>
           <div class="result-text">
-            <div class="result-label">Température</div>
+            <div class="result-label">Temperature</div>
             <div class="result-value">{{ prediction.temperature }}<span class="unit">°C</span></div>
-            <div class="result-info">Idéale pour préserver la qualité</div>
+            <div class="result-info">Ideal for preserving quality</div>
           </div>
         </div>
 
@@ -116,15 +116,15 @@
             </svg>
           </div>
           <div class="result-text">
-            <div class="result-label">Humidité</div>
+            <div class="result-label">Humidity</div>
             <div class="result-value">{{ prediction.humidity }}<span class="unit">%</span></div>
-            <div class="result-info">Optimale pour la durée de vie</div>
+            <div class="result-info">Optimal for product lifespan</div>
           </div>
         </div>
       </div>
 
       <div class="recommendation">
-        <p>Ces conditions sont recommandées pour assurer la stabilité et l'efficacité de votre produit de catégorie <strong>{{ formData.category }}</strong>.</p>
+        <p>These conditions are recommended to ensure stability and effectiveness of your product in the <strong>{{ formData.category }}</strong> category.</p>
       </div>
     </div>
   </div>

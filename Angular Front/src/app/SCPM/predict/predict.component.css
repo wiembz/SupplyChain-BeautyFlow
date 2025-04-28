@@ -74,7 +74,8 @@
   gap: 12px;
 }
 
-.action-buttons .predict-button {
+.action-buttons .predict-button,
+.action-buttons .logout-button {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -91,18 +92,24 @@
   height: auto;
 }
 
-.action-buttons .predict-button:hover {
+.action-buttons .predict-button:hover,
+.action-buttons .logout-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background: linear-gradient(90deg, #8e6565 0%, #755252 100%);
 }
 
-.action-buttons .predict-button svg {
+.action-buttons .predict-button svg,
+.action-buttons .logout-button svg {
   transition: transform 0.3s ease;
 }
 
 .action-buttons .predict-button:hover svg {
   transform: translateX(-3px);
+}
+
+.action-buttons .logout-button:hover svg {
+  transform: translateX(3px);
 }
 
 /* Predict Container Styles */
