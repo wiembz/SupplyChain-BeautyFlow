@@ -15,10 +15,22 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Install Power BI modules
+    - name: Lister les fichiers pour debug
+      shell: pwsh
+      run: Get-ChildItem -Recurse
+
+    - name: Installer les modules Power BI
       shell: pwsh
       run: Install-Module -Name MicrosoftPowerBIMgmt -Scope CurrentUser -Force
 
-    - name: Run deployment script
+    - name: Exécuter le script PowerShell
       shell: pwsh
-      run: ./scripts/deploiement.ps1
+      run: pwsh -File scripts/deploiement.ps1
+
+      # Si tu veux utiliser un Service Principal au lieu d'une connexion interactive :
+      # env:
+      #   POWERBI_CLIENT_ID: ${{ secrets.POWERBI_CLIENT_ID }}
+      #   POWERBI_CLIENT_SECRET: ${{ secrets.POWERBI_CLIENT_SECRET }}
+      #   POWERBI_TENANT_ID: ${{ secrets.POWERBI_TENANT_ID }}
+      #   POWERBI_WORKSPACE_ID: ${{ secrets.POWERBI_WORKSPACE_ID }}
+
