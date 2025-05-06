@@ -1,0 +1,12 @@
+# Ignorer les fichiers Power BI
+*.pbix
+*.pbit
+
+# Dossiers temporaires
+~$*
+
+# Dossiers générés automatiquement
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
