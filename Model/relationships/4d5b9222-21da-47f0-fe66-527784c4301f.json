@@ -1,0 +1,7 @@
+{
+  "name": "4d5b9222-21da-47f0-fe66-527784c4301f",
+  "fromTable": "public DimShops",
+  "fromColumn": "Fk_Geo",
+  "toTable": "public DimGeo",
+  "toColumn": "Pk_Geo"
+}

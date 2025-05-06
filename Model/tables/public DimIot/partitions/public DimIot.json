@@ -1,0 +1,14 @@
+{
+  "name": "public DimIot",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = PostgreSQL.Database(\"localhost\", \"DIMENSIONS\"),",
+      "    public_DimIot = Source{[Schema=\"public\",Item=\"DimIot\"]}[Data]",
+      "in",
+      "    public_DimIot"
+    ]
+  }
+}

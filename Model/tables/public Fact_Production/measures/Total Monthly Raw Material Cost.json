@@ -1,0 +1,15 @@
+{
+  "name": "Total Monthly Raw Material Cost",
+  "expression": [
+    "",
+    "CALCULATE(SUMX('public Fact_Production', [QuantityInventory] * [UnitPriceRawMaterial]))",
+    ""
+  ],
+  "lineageTag": "550d7bb7-940e-4316-9c04-8af5a0de7a3c",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

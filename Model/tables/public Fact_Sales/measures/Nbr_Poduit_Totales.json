@@ -1,0 +1,6 @@
+{
+  "name": "Nbr_Poduit_Totales",
+  "expression": "Count('public DimProducts'[Pk_Products])",
+  "formatString": "0",
+  "lineageTag": "69b338dc-db26-4470-923b-5436b24cd6c9"
+}

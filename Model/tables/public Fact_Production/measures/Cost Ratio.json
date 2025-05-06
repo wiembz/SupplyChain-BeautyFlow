@@ -1,0 +1,17 @@
+{
+  "name": "Cost Ratio",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    SUMX('public Fact_Production', [QuantityInventory] * [UnitPriceRawMaterial]),",
+    "    SUMX('public Fact_Production', [QuantityInventory] * [Dosage])",
+    ")"
+  ],
+  "lineageTag": "1cb99b8b-cc28-409b-906e-caa2bb95cec4",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

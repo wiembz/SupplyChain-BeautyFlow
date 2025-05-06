@@ -1,0 +1,14 @@
+{
+  "name": "QuantityInventory",
+  "dataType": "int64",
+  "sourceColumn": "QuantityInventory",
+  "formatString": "0",
+  "lineageTag": "35a8559f-cc93-4dfa-b5ca-6cf14ba62c20",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

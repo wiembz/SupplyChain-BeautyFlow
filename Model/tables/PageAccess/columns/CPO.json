@@ -1,0 +1,17 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "CPO",
+  "dataType": "int64",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[CPO]",
+  "formatString": "0",
+  "lineageTag": "a6cbf00d-2098-4572-acb4-7f019137640c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    }
+  ]
+}

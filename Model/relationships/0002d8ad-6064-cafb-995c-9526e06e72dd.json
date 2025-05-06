@@ -1,0 +1,7 @@
+{
+  "name": "0002d8ad-6064-cafb-995c-9526e06e72dd",
+  "fromTable": "public Fact_Stock",
+  "fromColumn": "Fk_ExpiryDate",
+  "toTable": "public DimDate",
+  "toColumn": "date_id"
+}

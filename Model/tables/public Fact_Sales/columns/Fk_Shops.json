@@ -1,0 +1,14 @@
+{
+  "name": "Fk_Shops",
+  "dataType": "int64",
+  "sourceColumn": "Fk_Shops",
+  "formatString": "0",
+  "lineageTag": "d3a0fee9-64e1-4d5b-89d1-64394de0672f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

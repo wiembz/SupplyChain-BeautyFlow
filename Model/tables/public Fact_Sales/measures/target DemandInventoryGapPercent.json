@@ -1,0 +1,15 @@
+{
+  "name": "target DemandInventoryGapPercent",
+  "expression": [
+    "0.8",
+    "",
+    ""
+  ],
+  "lineageTag": "f2509b3b-19f9-4a9e-8441-fc02f0361615",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

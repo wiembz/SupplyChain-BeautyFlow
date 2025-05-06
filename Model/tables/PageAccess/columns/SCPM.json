@@ -1,0 +1,17 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "SCPM",
+  "dataType": "int64",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[SCPM]",
+  "formatString": "0",
+  "lineageTag": "1fbdb5c8-6849-4b1d-ac90-3c28358334e8",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    }
+  ]
+}

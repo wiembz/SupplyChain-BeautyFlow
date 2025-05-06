@@ -1,0 +1,17 @@
+{
+  "name": "Humidity",
+  "dataType": "double",
+  "sourceColumn": "Humidity",
+  "lineageTag": "389996b9-9abb-4eec-8c2e-8dd480d393e5",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

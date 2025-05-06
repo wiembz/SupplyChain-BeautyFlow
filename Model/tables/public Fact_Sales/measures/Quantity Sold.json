@@ -1,0 +1,12 @@
+{
+  "name": "Quantity Sold",
+  "expression": [
+    "",
+    "CALCULATE(",
+    "    COUNTROWS('public Fact_Sales'),",
+    "    ALLEXCEPT('public Fact_Sales', 'public Fact_Sales'[Fk_Products])",
+    ")"
+  ],
+  "formatString": "0",
+  "lineageTag": "0c9cde2d-24e0-4639-b46b-eddeb7766c9f"
+}

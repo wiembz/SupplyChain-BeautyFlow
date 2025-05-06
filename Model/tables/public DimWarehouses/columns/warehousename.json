@@ -1,0 +1,13 @@
+{
+  "name": "warehousename",
+  "dataType": "string",
+  "sourceColumn": "warehousename",
+  "lineageTag": "13b9124b-7fab-4fd0-953a-8e0aa2489334",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

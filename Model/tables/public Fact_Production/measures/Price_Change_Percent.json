@@ -1,0 +1,19 @@
+{
+  "name": "Price_Change_Percent",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    [Avg Unit Price Raw Material] - [Avg Price Last Month],",
+    "    [Avg Price Last Month],",
+    "    0",
+    ")",
+    ""
+  ],
+  "lineageTag": "b604fede-479f-4a53-beab-c46175e58b51",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

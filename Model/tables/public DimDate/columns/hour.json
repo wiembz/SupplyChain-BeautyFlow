@@ -1,0 +1,14 @@
+{
+  "name": "hour",
+  "dataType": "int64",
+  "sourceColumn": "hour",
+  "formatString": "0",
+  "lineageTag": "00976b47-d97f-4226-b5ec-b5d44e050735",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

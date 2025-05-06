@@ -1,0 +1,25 @@
+{
+  "name": "%_Overstocked",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    CALCULATE(",
+    "        COUNTROWS('public Fact_Stock'),",
+    "        FILTER(",
+    "            'public Fact_Stock',",
+    "            DIVIDE('public Fact_Stock'[QuantityInventory], 'public Fact_Stock'[CapacityWarehouse], 0) > 0.9",
+    "        )",
+    "    ),",
+    "    COUNTROWS('public Fact_Stock'),",
+    "    0",
+    ")",
+    ""
+  ],
+  "lineageTag": "580d660c-d637-4cba-9c41-8cf3500428f7",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "7816f0a7-c448-d148-27af-00f70588d131",
+  "fromTable": "public DimOrders",
+  "fromColumn": "productid",
+  "toTable": "public DimIot",
+  "toColumn": "productid"
+}

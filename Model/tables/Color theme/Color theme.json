@@ -1,0 +1,14 @@
+{
+  "name": "Color theme",
+  "lineageTag": "b6cb5820-fbb5-439e-bd70-b8125a736386",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

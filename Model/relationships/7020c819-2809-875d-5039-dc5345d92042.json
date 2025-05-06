@@ -1,0 +1,7 @@
+{
+  "name": "7020c819-2809-875d-5039-dc5345d92042",
+  "fromTable": "PageAccess",
+  "fromColumn": "page name",
+  "toTable": "UserRoles",
+  "toColumn": "Role"
+}

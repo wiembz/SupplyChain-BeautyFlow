@@ -1,0 +1,7 @@
+{
+  "name": "b52e51d3-ab76-922f-a96e-181c19c0fd20",
+  "fromTable": "public Fact_Stock",
+  "fromColumn": "Fk_Warehouses",
+  "toTable": "public DimWarehouses",
+  "toColumn": "Pk_Warehouses"
+}

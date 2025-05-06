@@ -1,0 +1,14 @@
+{
+  "name": "Fk_ExpiryDate",
+  "dataType": "int64",
+  "sourceColumn": "Fk_ExpiryDate",
+  "formatString": "0",
+  "lineageTag": "c752f0fe-3038-4b52-8e04-7f004e17f58b",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "761d1b07-cb01-24df-c69c-0544b5b429cd",
+  "fromTable": "public DimProducts",
+  "fromColumn": "productid",
+  "toTable": "public DimIot",
+  "toColumn": "productid",
+  "isActive": false
+}

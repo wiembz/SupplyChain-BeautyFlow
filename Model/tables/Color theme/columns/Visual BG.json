@@ -1,0 +1,13 @@
+{
+  "name": "Visual BG",
+  "dataType": "string",
+  "sourceColumn": "Visual BG",
+  "lineageTag": "a1611506-6ed3-4f5c-be9a-88e5e44164e6",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

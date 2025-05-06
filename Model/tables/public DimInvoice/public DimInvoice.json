@@ -1,0 +1,10 @@
+{
+  "name": "public DimInvoice",
+  "lineageTag": "758fd80b-2336-46c0-8fc9-23e500ce1a2b",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

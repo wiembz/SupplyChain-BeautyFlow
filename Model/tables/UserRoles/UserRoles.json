@@ -1,0 +1,14 @@
+{
+  "name": "UserRoles",
+  "lineageTag": "d4c715d4-7d37-4b34-8881-bdb0997a8a54",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "8863d152-ff28-a9f6-a9be-dc519662dec5",
+  "fromTable": "public Fact_Stock",
+  "fromColumn": "Fk_Iot",
+  "toTable": "public DimIot",
+  "toColumn": "Pk_Iot"
+}

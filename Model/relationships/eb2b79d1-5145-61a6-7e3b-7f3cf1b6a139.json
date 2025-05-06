@@ -1,0 +1,7 @@
+{
+  "name": "eb2b79d1-5145-61a6-7e3b-7f3cf1b6a139",
+  "fromTable": "public Fact_Sales",
+  "fromColumn": "FK_Invoice",
+  "toTable": "public DimInvoice",
+  "toColumn": "PK_Invoice"
+}

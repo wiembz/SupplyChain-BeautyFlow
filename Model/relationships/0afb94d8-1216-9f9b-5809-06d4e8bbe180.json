@@ -1,0 +1,8 @@
+{
+  "name": "0afb94d8-1216-9f9b-5809-06d4e8bbe180",
+  "toCardinality": "many",
+  "fromTable": "public DimGeo",
+  "fromColumn": "Pk_Geo",
+  "toTable": "public DimSupplier",
+  "toColumn": "Fk_Geo"
+}

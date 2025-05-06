@@ -1,0 +1,18 @@
+{
+  "name": "AverageDailySales",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "   'public Fact_Sales'[Quantity Sold],",
+    "    DISTINCTCOUNT('public Fact_Sales'[Fk_DateInvoice])",
+    ")",
+    ""
+  ],
+  "lineageTag": "1b1b7350-95b8-4400-a081-2d3edf7c7f48",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

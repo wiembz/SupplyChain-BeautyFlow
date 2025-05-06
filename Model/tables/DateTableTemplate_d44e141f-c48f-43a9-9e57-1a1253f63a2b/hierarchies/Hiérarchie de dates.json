@@ -1,0 +1,36 @@
+{
+  "name": "Hiérarchie de dates",
+  "lineageTag": "18fadf6a-031a-4eaf-a26c-1f4ff86726c3",
+  "levels": [
+    {
+      "name": "Année",
+      "ordinal": 0,
+      "column": "Année",
+      "lineageTag": "4db0e582-3338-48a7-8934-e7bb0b555a15"
+    },
+    {
+      "name": "Trimestre",
+      "ordinal": 1,
+      "column": "Trimestre",
+      "lineageTag": "a5412d5a-ee9a-4bdf-a411-a213641b1b9a"
+    },
+    {
+      "name": "Mois",
+      "ordinal": 2,
+      "column": "Mois",
+      "lineageTag": "dab2d1e3-c69b-44a0-a2ad-cb93facf4e41"
+    },
+    {
+      "name": "Jour",
+      "ordinal": 3,
+      "column": "Jour",
+      "lineageTag": "f35bdd93-64c7-4a98-a41d-837e8cdad2fc"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "TemplateId",
+      "value": "DateHierarchy"
+    }
+  ]
+}

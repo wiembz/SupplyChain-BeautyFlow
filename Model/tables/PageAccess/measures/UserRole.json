@@ -1,0 +1,13 @@
+{
+  "name": "UserRole",
+  "expression": [
+    "",
+    "LOOKUPVALUE(",
+    "    UserRoles[Role],",
+    "    UserRoles[Email],",
+    "    USERPRINCIPALNAME()",
+    ")",
+    ""
+  ],
+  "lineageTag": "f3b58982-fa1e-454b-8764-5954e60c2a7c"
+}

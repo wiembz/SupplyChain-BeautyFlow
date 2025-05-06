@@ -1,0 +1,25 @@
+{
+  "name": "full_date",
+  "dataType": "dateTime",
+  "sourceColumn": "full_date",
+  "formatString": "General Date",
+  "lineageTag": "b4d002bc-cdf8-4219-a823-46014f42863d",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "6c6a2b50-9539-4998-bd8c-92fdca82a8e8",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_45a47d8c-5413-4317-b4d5-7139af6e4e68",
+        "hierarchy": "Hiérarchie de dates"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

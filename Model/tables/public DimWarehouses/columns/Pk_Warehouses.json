@@ -1,0 +1,14 @@
+{
+  "name": "Pk_Warehouses",
+  "dataType": "int64",
+  "sourceColumn": "Pk_Warehouses",
+  "formatString": "0",
+  "lineageTag": "bd9d9a1b-fae3-4986-b5df-ddd4243818b7",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

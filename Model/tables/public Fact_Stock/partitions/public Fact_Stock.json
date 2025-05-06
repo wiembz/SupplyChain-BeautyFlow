@@ -1,0 +1,15 @@
+{
+  "name": "public Fact_Stock",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = PostgreSQL.Database(\"localhost\", \"FACTS\"),",
+      "    public_Fact_Stock = Source{[Schema=\"public\",Item=\"Fact_Stock\"]}[Data],",
+      "    #\"Type modifié\" = Table.TransformColumnTypes(public_Fact_Stock,{{\"QuantityInventory\", Int64.Type}, {\"CapacityWarehouse\", Int64.Type}, {\"Fk_Products\", Int64.Type}, {\"Fk_ManufactureDate\", Int64.Type}, {\"Fk_ExpiryDate\", Int64.Type}, {\"FK_Inventory\", Int64.Type}, {\"Fk_Warehouses\", Int64.Type}, {\"Fk_Iot\", Int64.Type}, {\"Temperature\", type number}, {\"Humidity\", type number}})",
+      "in",
+      "    #\"Type modifié\""
+    ]
+  }
+}

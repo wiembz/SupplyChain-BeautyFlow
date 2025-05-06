@@ -1,0 +1,14 @@
+{
+  "name": "public DimWarehouses",
+  "lineageTag": "fd9790a7-9fb3-47a6-aaf4-b9eb9390ee0e",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

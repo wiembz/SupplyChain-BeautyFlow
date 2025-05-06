@@ -1,0 +1,17 @@
+{
+  "name": "UnitPriceRawMaterial",
+  "dataType": "double",
+  "sourceColumn": "UnitPriceRawMaterial",
+  "lineageTag": "3597c794-a7de-4648-98ee-546a1050deca",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

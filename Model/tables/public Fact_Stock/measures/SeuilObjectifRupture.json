@@ -1,0 +1,11 @@
+{
+  "name": "SeuilObjectifRupture",
+  "expression": "0.05",
+  "lineageTag": "ee85e121-5f4d-448e-a2ec-7595c0e0510c",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

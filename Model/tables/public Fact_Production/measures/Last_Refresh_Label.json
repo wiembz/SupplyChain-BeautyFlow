@@ -1,0 +1,8 @@
+{
+  "name": "Last_Refresh_Label",
+  "expression": [
+    "\"Last update: \" & FORMAT(NOW(), \"dd/mm/yyyy HH:mm\")",
+    ""
+  ],
+  "lineageTag": "42ef83c1-9458-4a5a-953e-1bf04a5b0f6f"
+}

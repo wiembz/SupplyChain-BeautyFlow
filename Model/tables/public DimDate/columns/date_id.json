@@ -1,0 +1,14 @@
+{
+  "name": "date_id",
+  "dataType": "int64",
+  "sourceColumn": "date_id",
+  "formatString": "0",
+  "lineageTag": "f2a84959-e2ca-4d11-99fc-5cc1a7352ac0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

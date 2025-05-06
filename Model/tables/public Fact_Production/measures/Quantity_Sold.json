@@ -1,0 +1,18 @@
+{
+  "name": "Quantity_Sold",
+  "expression": [
+    "",
+    "SUMX(",
+    "    'public Fact_Sales',",
+    "    VALUE('public Fact_Sales'[Quantity Sold])",
+    ")",
+    ""
+  ],
+  "lineageTag": "f34581ed-610d-4cee-8e7c-0583e1a13143",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "public DimShops",
+  "lineageTag": "a8ffe3cb-a42a-4920-8930-d6a5ce2be7e7",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

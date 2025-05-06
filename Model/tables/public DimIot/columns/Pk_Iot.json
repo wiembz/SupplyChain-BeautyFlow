@@ -1,0 +1,14 @@
+{
+  "name": "Pk_Iot",
+  "dataType": "int64",
+  "sourceColumn": "Pk_Iot",
+  "formatString": "0",
+  "lineageTag": "d4fde8d6-b471-4263-a459-8ad2f2d9f18a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

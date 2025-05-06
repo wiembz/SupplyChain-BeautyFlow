@@ -1,0 +1,17 @@
+{
+  "name": "KPI_RatioProdVente_Couleur",
+  "expression": [
+    "",
+    "VAR Ratio = [RatioProdVente]",
+    "RETURN ",
+    "SWITCH(",
+    "    TRUE(),",
+    "    Ratio = 1, \"#00B050\",        -- Vert",
+    "    Ratio >= 0.95 && Ratio <= 0.99, \"#FFA500\",  -- Orange",
+    "    Ratio >= 1.01 && Ratio <= 1.20, \"#FFA500\",  -- Orange",
+    "    \"#FF0000\"                    -- Rouge par défaut",
+    ")",
+    ""
+  ],
+  "lineageTag": "08332d77-8a70-4662-b30f-4e76f8a1aa37"
+}

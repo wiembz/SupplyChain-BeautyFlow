@@ -1,0 +1,14 @@
+{
+  "name": "PK_RawMaterials",
+  "dataType": "int64",
+  "sourceColumn": "PK_RawMaterials",
+  "formatString": "0",
+  "lineageTag": "8dbd9390-1fa0-4965-bb02-70e16d83d75f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

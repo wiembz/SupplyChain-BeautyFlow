@@ -1,0 +1,14 @@
+{
+  "name": "public DimRawMaterials",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = PostgreSQL.Database(\"localhost\", \"DIMENSIONS\"),",
+      "    public_DimRawMaterials = Source{[Schema=\"public\",Item=\"DimRawMaterials\"]}[Data]",
+      "in",
+      "    public_DimRawMaterials"
+    ]
+  }
+}

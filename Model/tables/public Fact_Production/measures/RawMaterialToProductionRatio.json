@@ -1,0 +1,10 @@
+{
+  "name": "RawMaterialToProductionRatio",
+  "expression": [
+    "",
+    "DIVIDE([Total Raw Material Cost], [Production Cost])",
+    ""
+  ],
+  "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+  "lineageTag": "b9913257-a58c-448a-85d4-81c05bbe1044"
+}

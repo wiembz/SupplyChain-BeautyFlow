@@ -1,0 +1,10 @@
+{
+  "name": "public DimRawMaterials",
+  "lineageTag": "fece23de-352b-4aa8-a63d-49eb2004889e",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

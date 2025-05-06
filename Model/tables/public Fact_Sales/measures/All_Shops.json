@@ -1,0 +1,9 @@
+{
+  "name": "All_Shops",
+  "expression": [
+    "DISTINCTCOUNT('public DimShops'[shopid])",
+    ""
+  ],
+  "formatString": "0",
+  "lineageTag": "61991919-761e-4509-9711-fd673f504460"
+}

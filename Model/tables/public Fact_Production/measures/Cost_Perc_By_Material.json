@@ -1,0 +1,30 @@
+{
+  "name": "Cost_Perc_By_Material",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    SUMX(",
+    "        'public Fact_Production',",
+    "        'public Fact_Production'[QuantityInventory] * 'public Fact_Production'[UnitPriceRawMaterial]",
+    "    ),",
+    "    CALCULATE(",
+    "        SUMX(",
+    "            'public Fact_Production',",
+    "            'public Fact_Production'[QuantityInventory] * 'public Fact_Production'[UnitPriceRawMaterial]",
+    "        ),",
+    "        ALLEXCEPT(",
+    "            'public DimProducts',",
+    "            'public DimProducts'[ProductName]",
+    "        )",
+    "    )",
+    ")",
+    ""
+  ],
+  "lineageTag": "768e6093-16d8-4f04-a36b-e03895a4f50a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

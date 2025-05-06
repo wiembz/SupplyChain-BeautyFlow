@@ -1,0 +1,17 @@
+{
+  "name": "UserRoles",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\nouuc\\Desktop\\Supply Chain\\data\\Roles.xlsx\"), null, true),",
+      "    Feuil1_Sheet = Source{[Item=\"Feuil1\",Kind=\"Sheet\"]}[Data],",
+      "    #\"Type modifié\" = Table.TransformColumnTypes(Feuil1_Sheet,{{\"Column1\", type text}, {\"Column2\", type text}}),",
+      "    #\"En-têtes promus\" = Table.PromoteHeaders(#\"Type modifié\", [PromoteAllScalars=true]),",
+      "    #\"Type modifié1\" = Table.TransformColumnTypes(#\"En-têtes promus\",{{\"Email\", type text}, {\"Role\", type text}})",
+      "in",
+      "    #\"Type modifié1\""
+    ]
+  }
+}

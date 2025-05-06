@@ -1,0 +1,14 @@
+{
+  "name": "Fk_RawMaterial",
+  "dataType": "int64",
+  "sourceColumn": "Fk_RawMaterial",
+  "formatString": "0",
+  "lineageTag": "fe6d008d-72bb-4e34-b122-3c6f0c33a0e8",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

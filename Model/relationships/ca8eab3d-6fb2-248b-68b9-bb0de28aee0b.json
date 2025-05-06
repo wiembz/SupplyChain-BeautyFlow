@@ -1,0 +1,8 @@
+{
+  "name": "ca8eab3d-6fb2-248b-68b9-bb0de28aee0b",
+  "fromTable": "public Fact_Production",
+  "fromColumn": "Fk_Start_Time",
+  "toTable": "public DimDate",
+  "toColumn": "date_id",
+  "isActive": false
+}

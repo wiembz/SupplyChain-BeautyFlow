@@ -1,0 +1,14 @@
+{
+  "name": "Fk_Iot",
+  "dataType": "int64",
+  "sourceColumn": "Fk_Iot",
+  "formatString": "0",
+  "lineageTag": "c10cbb9d-4105-4ac9-a9ea-8b2f6112e734",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

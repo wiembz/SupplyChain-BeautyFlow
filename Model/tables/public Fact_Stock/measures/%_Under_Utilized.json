@@ -1,0 +1,9 @@
+{
+  "name": "%_Under_Utilized",
+  "expression": [
+    "DIVIDE([Under_Utilized_Warehouses], [Total_Warehouses], 0)",
+    ""
+  ],
+  "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+  "lineageTag": "776cda4c-1dfc-4ce1-98c9-668d85538ae8"
+}

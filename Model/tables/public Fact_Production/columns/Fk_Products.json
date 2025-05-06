@@ -1,0 +1,14 @@
+{
+  "name": "Fk_Products",
+  "dataType": "int64",
+  "sourceColumn": "Fk_Products",
+  "formatString": "0",
+  "lineageTag": "5a7e0801-f339-46f8-8d67-a45a82c86fab",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

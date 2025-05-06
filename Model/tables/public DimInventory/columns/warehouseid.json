@@ -1,0 +1,14 @@
+{
+  "name": "warehouseid",
+  "dataType": "int64",
+  "sourceColumn": "warehouseid",
+  "formatString": "0",
+  "lineageTag": "60014f6e-8cc2-4ced-b304-0d336561ac72",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

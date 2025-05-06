@@ -1,0 +1,15 @@
+{
+  "name": "Price Variation",
+  "expression": [
+    "",
+    "[Avg Unit Price Raw Material] - [Avg Price Last Month]",
+    ""
+  ],
+  "lineageTag": "1f2e7f0d-9194-4d88-aaf5-4fbdc2f365f9",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

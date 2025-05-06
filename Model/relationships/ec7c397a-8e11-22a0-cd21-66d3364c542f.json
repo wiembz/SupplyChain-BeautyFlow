@@ -1,0 +1,7 @@
+{
+  "name": "ec7c397a-8e11-22a0-cd21-66d3364c542f",
+  "fromTable": "public Fact_Production",
+  "fromColumn": "Fk_RawMaterial",
+  "toTable": "public DimRawMaterials",
+  "toColumn": "PK_RawMaterials"
+}

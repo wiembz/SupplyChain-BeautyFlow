@@ -1,0 +1,13 @@
+{
+  "name": "StockRiskLevel",
+  "expression": [
+    "",
+    "SWITCH(TRUE(),",
+    "    [StockCoverageDays_PerProduct] < 15, \"⚠️ Low\",",
+    "    [StockCoverageDays_PerProduct] < 30, \"🟡 Medium\",",
+    "    \"🟢 Good\"",
+    ")",
+    ""
+  ],
+  "lineageTag": "89f41499-7a37-4986-8f97-132a2be4dc91"
+}

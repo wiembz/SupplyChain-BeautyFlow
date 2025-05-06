@@ -1,0 +1,14 @@
+{
+  "name": "Fk_End_Time",
+  "dataType": "int64",
+  "sourceColumn": "Fk_End_Time",
+  "formatString": "0",
+  "lineageTag": "f6d2f399-6b88-4e9c-89dc-7232b672b038",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

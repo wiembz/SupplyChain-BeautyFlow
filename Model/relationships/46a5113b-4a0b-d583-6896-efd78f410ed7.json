@@ -1,0 +1,8 @@
+{
+  "name": "46a5113b-4a0b-d583-6896-efd78f410ed7",
+  "fromTable": "public Fact_Production",
+  "fromColumn": "Fk_ManufactureDate",
+  "toTable": "public DimDate",
+  "toColumn": "date_id",
+  "isActive": false
+}

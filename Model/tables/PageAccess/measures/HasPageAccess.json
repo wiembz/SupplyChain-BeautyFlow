@@ -1,0 +1,25 @@
+{
+  "name": "HasPageAccess",
+  "expression": [
+    "",
+    "VAR CurrentRole = ",
+    "    LOOKUPVALUE(",
+    "        UserRoles[Role],",
+    "        UserRoles[Email],",
+    "        USERPRINCIPALNAME()",
+    "    )",
+    "VAR Access = ",
+    "    SWITCH(",
+    "        TRUE(),",
+    "        CurrentRole = \"CPO\", SELECTEDVALUE(PageAccess[CPO]),",
+    "        CurrentRole = \"COO\", SELECTEDVALUE(PageAccess[COO]),",
+    "        CurrentRole = \"SCPM\", SELECTEDVALUE(PageAccess[SCPM]),",
+    "        CurrentRole = \"LM\", SELECTEDVALUE(PageAccess[LM]),",
+    "        0",
+    "    )",
+    "RETURN Access",
+    ""
+  ],
+  "formatString": "0",
+  "lineageTag": "2735c418-3ac6-4a8f-849c-af8c77e1a479"
+}

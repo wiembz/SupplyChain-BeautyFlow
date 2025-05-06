@@ -1,0 +1,15 @@
+{
+  "name": "Production Cost",
+  "expression": [
+    "",
+    "VAR BaseCost = SUMX(",
+    "    'public Fact_Production',",
+    "    'public Fact_Production'[QuantityInventory] * 'public Fact_Production'[Dosage]",
+    ")",
+    "RETURN",
+    "BaseCost + (BaseCost * 0.05)",
+    ""
+  ],
+  "formatString": "0",
+  "lineageTag": "e2eb4bd7-2354-4dec-837c-3bb0ac09eeb6"
+}

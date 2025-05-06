@@ -1,0 +1,19 @@
+{
+  "name": "DemandInventoryGapPercent",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    SUM('public Fact_Sales'[quantityDemanded]) - SUMX ('public Fact_Stock','public Fact_Stock'[TotalInventory]),",
+    "    SUM('public Fact_Sales'[quantityDemanded]),",
+    "    0",
+    ")",
+    ""
+  ],
+  "lineageTag": "ad56c7f7-4d1a-40dc-9c4f-9957a06e6b9d",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

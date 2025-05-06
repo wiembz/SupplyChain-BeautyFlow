@@ -1,0 +1,9 @@
+{
+  "name": "Total_Warehouses",
+  "expression": [
+    "COUNTROWS('public DimWarehouses')",
+    ""
+  ],
+  "formatString": "0",
+  "lineageTag": "eda2f608-4299-4adf-936d-023df4b37651"
+}

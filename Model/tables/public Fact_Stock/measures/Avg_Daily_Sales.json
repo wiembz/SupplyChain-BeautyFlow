@@ -1,0 +1,19 @@
+{
+  "name": "Avg_Daily_Sales",
+  "expression": [
+    "",
+    "AVERAGEX(",
+    "    VALUES('public DimDate'[full_date]),",
+    "    CALCULATE(SUM('public Fact_Sales'[quantityDemanded]))",
+    ")",
+    "",
+    ""
+  ],
+  "lineageTag": "b7f586d9-6374-4bcf-9f05-b45968fedfcf",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

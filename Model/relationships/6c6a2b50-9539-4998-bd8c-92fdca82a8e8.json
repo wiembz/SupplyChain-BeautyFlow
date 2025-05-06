@@ -1,0 +1,8 @@
+{
+  "name": "6c6a2b50-9539-4998-bd8c-92fdca82a8e8",
+  "fromTable": "public DimDate",
+  "fromColumn": "full_date",
+  "toTable": "LocalDateTable_45a47d8c-5413-4317-b4d5-7139af6e4e68",
+  "toColumn": "Date",
+  "joinOnDateBehavior": "datePartOnly"
+}

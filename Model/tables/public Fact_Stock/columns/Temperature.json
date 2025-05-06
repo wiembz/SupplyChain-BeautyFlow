@@ -1,0 +1,17 @@
+{
+  "name": "Temperature",
+  "dataType": "double",
+  "sourceColumn": "Temperature",
+  "lineageTag": "f39d00ac-45c3-4d37-9744-41c3b7ad46a0",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Total_Current_Stock",
+  "expression": [
+    "SUM('public Fact_Stock'[QuantityInventory])",
+    ""
+  ],
+  "formatString": "0",
+  "lineageTag": "912692dd-fd21-4416-b24d-f2f625f829a9"
+}

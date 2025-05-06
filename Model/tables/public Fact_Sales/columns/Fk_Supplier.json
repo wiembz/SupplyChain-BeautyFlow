@@ -1,0 +1,13 @@
+{
+  "name": "Fk_Supplier",
+  "dataType": "string",
+  "sourceColumn": "Fk_Supplier",
+  "lineageTag": "5986f06c-0539-4fee-8712-36eb69754253",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

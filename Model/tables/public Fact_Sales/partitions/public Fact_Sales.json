@@ -1,0 +1,15 @@
+{
+  "name": "public Fact_Sales",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = PostgreSQL.Database(\"localhost\", \"FACTS\"),",
+      "    public_Fact_Sales = Source{[Schema=\"public\",Item=\"Fact_Sales\"]}[Data],",
+      "    #\"Type modifié\" = Table.TransformColumnTypes(public_Fact_Sales,{{\"Fk_OrderDate\", Int64.Type}, {\"Fk_DateInvoice\", Int64.Type}})",
+      "in",
+      "    #\"Type modifié\""
+    ]
+  }
+}

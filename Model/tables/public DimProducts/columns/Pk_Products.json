@@ -1,0 +1,14 @@
+{
+  "name": "Pk_Products",
+  "dataType": "int64",
+  "sourceColumn": "Pk_Products",
+  "formatString": "0",
+  "lineageTag": "a074c085-50ea-4fc4-966c-2bd6aa26891f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

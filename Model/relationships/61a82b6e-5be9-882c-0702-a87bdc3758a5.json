@@ -1,0 +1,8 @@
+{
+  "name": "61a82b6e-5be9-882c-0702-a87bdc3758a5",
+  "fromTable": "public Fact_Sales",
+  "fromColumn": "Fk_ExpiryDate",
+  "toTable": "public DimDate",
+  "toColumn": "date_id",
+  "isActive": false
+}

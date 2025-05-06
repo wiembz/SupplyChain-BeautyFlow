@@ -1,0 +1,15 @@
+{
+  "name": "Price Variation %",
+  "expression": [
+    "",
+    "DIVIDE([Price Variation], [Avg Price Last Month])",
+    ""
+  ],
+  "lineageTag": "d4f78e2e-2974-4700-bb6b-1367fec7c714",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

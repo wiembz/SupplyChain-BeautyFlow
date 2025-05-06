@@ -1,0 +1,14 @@
+{
+  "name": "Pk_Orders",
+  "dataType": "int64",
+  "sourceColumn": "Pk_Orders",
+  "formatString": "0",
+  "lineageTag": "99dc3a3f-8f86-4b63-9477-9863cb9d8bb2",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

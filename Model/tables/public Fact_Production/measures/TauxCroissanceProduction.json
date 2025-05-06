@@ -1,0 +1,18 @@
+{
+  "name": "TauxCroissanceProduction",
+  "expression": [
+    "",
+    "VAR ProductionActuelle =",
+    "    CALCULATE(SUM('public Fact_Production'[QuantityInventory]))",
+    "VAR ProductionPeriodePrecedente =",
+    "    CALCULATE(",
+    "        SUM('public Fact_Production'[QuantityInventory]),",
+    "        DATEADD('public DimDate'[month], -1, MONTH)  -- Tu peux remplacer MONTH par QUARTER ou YEAR",
+    "    )",
+    "RETURN",
+    "    DIVIDE(ProductionActuelle - ProductionPeriodePrecedente, ProductionPeriodePrecedente, 0)",
+    ""
+  ],
+  "formatString": "0",
+  "lineageTag": "81a3994a-a0f4-4f4f-8722-391e3b11541f"
+}

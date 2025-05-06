@@ -1,0 +1,14 @@
+{
+  "name": "Total Raw Material Cost",
+  "expression": [
+    "SUMX('public Fact_Production', [QuantityInventory] * [UnitPriceRawMaterial])",
+    ""
+  ],
+  "lineageTag": "e575805a-143c-4bd8-af43-b2e80b07a15e",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

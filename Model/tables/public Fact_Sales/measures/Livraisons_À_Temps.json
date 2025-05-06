@@ -1,0 +1,19 @@
+{
+  "name": "Livraisons_À_Temps",
+  "expression": [
+    "",
+    "CALCULATE (",
+    "    COUNTROWS('public Fact_Sales'),",
+    "    FILTER (",
+    "        'public Fact_Sales',",
+    "        DATEDIFF (",
+    "            LOOKUPVALUE('public DimDate'[full_date], 'public DimDate'[date_id], 'public Fact_Sales'[Fk_OrderDate]),",
+    "            LOOKUPVALUE('public DimDate'[full_date], 'public DimDate'[date_id], 'public Fact_Sales'[Fk_DateInvoice]),",
+    "            DAY",
+    "        ) <= 3",
+    "    )",
+    ")"
+  ],
+  "formatString": "0",
+  "lineageTag": "ddc1e5d6-675b-4b3c-9388-faf482428ecd"
+}

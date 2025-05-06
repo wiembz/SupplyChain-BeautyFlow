@@ -1,0 +1,13 @@
+{
+  "name": "TauxOccupation_Couleur",
+  "expression": [
+    "",
+    "IF(",
+    "    [TauxOccupationEntrepot] > 0.8,",
+    "    \"#FF0000\",  -- 🔴 rouge si > 80%",
+    "    \"#00B050\"   -- 🟢 vert sinon",
+    ")",
+    ""
+  ],
+  "lineageTag": "627ea812-8b69-40a5-88a8-807e89189787"
+}

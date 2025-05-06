@@ -1,0 +1,7 @@
+{
+  "name": "f2807c4d-1a50-27c0-3e1f-0c61496c3eb1",
+  "fromTable": "public Fact_Sales",
+  "fromColumn": "Fk_Orders",
+  "toTable": "public DimOrders",
+  "toColumn": "Pk_Orders"
+}

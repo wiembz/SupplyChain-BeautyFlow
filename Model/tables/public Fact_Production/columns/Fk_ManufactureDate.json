@@ -1,0 +1,14 @@
+{
+  "name": "Fk_ManufactureDate",
+  "dataType": "int64",
+  "sourceColumn": "Fk_ManufactureDate",
+  "formatString": "0",
+  "lineageTag": "c50e086a-6eb3-436e-9b0a-07986b85e47c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    }
+  ]
+}

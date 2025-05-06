@@ -1,0 +1,14 @@
+{
+  "name": "public DimDate",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = PostgreSQL.Database(\"localhost\", \"DIMENSIONS\"),",
+      "    public_DimDate = Source{[Schema=\"public\",Item=\"DimDate\"]}[Data]",
+      "in",
+      "    public_DimDate"
+    ]
+  }
+}

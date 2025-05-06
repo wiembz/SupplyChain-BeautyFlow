@@ -1,0 +1,8 @@
+{
+  "name": "204c5b8a-1ab6-8c0f-29b9-e568c5757083",
+  "fromTable": "public Fact_Sales",
+  "fromColumn": "Fk_OrderDate",
+  "toTable": "public DimDate",
+  "toColumn": "date_id",
+  "isActive": false
+}

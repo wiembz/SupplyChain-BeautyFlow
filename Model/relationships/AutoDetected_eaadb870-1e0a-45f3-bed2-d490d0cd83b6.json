@@ -1,0 +1,8 @@
+{
+  "name": "AutoDetected_eaadb870-1e0a-45f3-bed2-d490d0cd83b6",
+  "fromTable": "public Fact_Production",
+  "fromColumn": "FK_Inventory",
+  "toTable": "public DimInventory",
+  "toColumn": "PK_Inventory",
+  "isActive": false
+}

@@ -1,0 +1,7 @@
+{
+  "name": "803462a6-e520-f1eb-0d40-7785b4573a92",
+  "fromTable": "public Fact_Sales",
+  "fromColumn": "Fk_Shops",
+  "toTable": "public DimShops",
+  "toColumn": "Pk_Shops"
+}

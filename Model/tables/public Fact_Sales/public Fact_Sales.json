@@ -1,0 +1,14 @@
+{
+  "name": "public Fact_Sales",
+  "lineageTag": "195cdf03-73e7-461e-a069-e0bc5919a74f",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

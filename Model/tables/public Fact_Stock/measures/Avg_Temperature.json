@@ -1,0 +1,14 @@
+{
+  "name": "Avg_Temperature",
+  "expression": [
+    "AVERAGE('public Fact_Stock'[Temperature])",
+    ""
+  ],
+  "lineageTag": "d01d82ac-0e8b-4cf1-a99c-44fb6e6d4fc1",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

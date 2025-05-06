@@ -1,0 +1,14 @@
+{
+  "name": "Fk_Orders",
+  "dataType": "int64",
+  "sourceColumn": "Fk_Orders",
+  "formatString": "0",
+  "lineageTag": "443c88b7-b8f0-4cac-be59-e88a64723683",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    }
+  ]
+}

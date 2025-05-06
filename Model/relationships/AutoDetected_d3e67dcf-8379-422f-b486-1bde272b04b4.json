@@ -1,0 +1,8 @@
+{
+  "name": "AutoDetected_d3e67dcf-8379-422f-b486-1bde272b04b4",
+  "fromTable": "public Fact_Production",
+  "fromColumn": "Fk_Orders",
+  "toTable": "public DimOrders",
+  "toColumn": "Pk_Orders",
+  "isActive": false
+}

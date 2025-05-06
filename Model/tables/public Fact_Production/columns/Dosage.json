@@ -1,0 +1,14 @@
+{
+  "name": "Dosage",
+  "dataType": "int64",
+  "sourceColumn": "Dosage",
+  "formatString": "0",
+  "lineageTag": "45c4947c-7383-49f3-b7c0-ef408b945ea1",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Target Taux_Respect_Delais",
+  "expression": "0.8",
+  "lineageTag": "7e94777c-9da0-488f-91ff-c9affea11d0a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

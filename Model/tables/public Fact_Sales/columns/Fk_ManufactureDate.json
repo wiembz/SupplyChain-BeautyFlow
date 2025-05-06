@@ -1,0 +1,13 @@
+{
+  "name": "Fk_ManufactureDate",
+  "dataType": "string",
+  "sourceColumn": "Fk_ManufactureDate",
+  "lineageTag": "3302dca6-5206-4449-80ca-cd540ca48d0f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Pk_Geo",
+  "dataType": "int64",
+  "sourceColumn": "Pk_Geo",
+  "formatString": "0",
+  "lineageTag": "55e75b8f-58d3-44a4-afe6-bc5159b69dc2",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

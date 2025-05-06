@@ -1,0 +1,15 @@
+{
+  "name": "Monthly Avg Price",
+  "expression": [
+    "",
+    "CALCULATE(AVERAGE('public Fact_Production'[UnitPriceRawMaterial]),ALLEXCEPT('public DimDate', 'public DimDate'[full_date]))",
+    ""
+  ],
+  "lineageTag": "69b3726b-239f-4776-8ab8-2e696809442f",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "public Fact_Stock",
+  "lineageTag": "1d4a9aa1-785d-4cf5-b200-1bbbba83884f",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

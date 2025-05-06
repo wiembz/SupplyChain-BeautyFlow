@@ -1,0 +1,13 @@
+{
+  "name": "BG",
+  "dataType": "string",
+  "sourceColumn": "BG",
+  "lineageTag": "55c88457-a67f-47e7-a7a3-527c4838c023",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

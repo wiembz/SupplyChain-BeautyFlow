@@ -1,0 +1,11 @@
+{
+  "name": "Temperature_Deviation",
+  "expression": "ABS([Avg_Temperature] - 20)",
+  "lineageTag": "d385d152-5bf8-4963-9ae1-3c7148d8c37f",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

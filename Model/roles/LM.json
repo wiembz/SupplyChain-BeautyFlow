@@ -1,0 +1,16 @@
+{
+  "name": "LM",
+  "modelPermission": "read",
+  "tablePermissions": [
+    {
+      "name": "PageAccess",
+      "filterExpression": "[LM] == 1"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "bcae6ebb1edf4424af25334217a1da7a"
+    }
+  ]
+}

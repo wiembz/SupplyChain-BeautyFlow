@@ -1,0 +1,18 @@
+{
+  "name": "TauxOccupationEntrepot",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    SUM('public Fact_Production'[QuantityInventory]),",
+    "    SUM('public Fact_Production'[CapacityWarehouse]),",
+    "    0",
+    ")"
+  ],
+  "lineageTag": "ab6f5608-8ba9-41d0-aef0-f28a7521b6ff",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

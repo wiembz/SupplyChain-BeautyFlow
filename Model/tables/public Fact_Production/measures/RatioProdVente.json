@@ -1,0 +1,17 @@
+{
+  "name": "RatioProdVente",
+  "expression": [
+    "",
+    "VAR QuantiteVendue = ([Quantity_Sold])  ",
+    "VAR QuantiteProduite = SUM('public Fact_Production'[QuantityInventory])",
+    "RETURN",
+    "DIVIDE(QuantiteVendue,QuantiteProduite,0)  "
+  ],
+  "lineageTag": "9de4c389-3d85-407c-86fc-d5a4b3b7e847",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

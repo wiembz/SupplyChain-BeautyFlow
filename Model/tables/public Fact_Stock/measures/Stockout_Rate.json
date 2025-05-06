@@ -1,0 +1,11 @@
+{
+  "name": "Stockout_Rate",
+  "expression": "DIVIDE('public Fact_Sales'[ProduitEnRupture],'public Fact_Sales'[Nbr_Poduit_Totales], 0)",
+  "lineageTag": "247d7f65-ee22-49a7-9c4f-5e009856cde6",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

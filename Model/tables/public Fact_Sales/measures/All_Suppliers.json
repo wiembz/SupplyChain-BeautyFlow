@@ -1,0 +1,9 @@
+{
+  "name": "All_Suppliers",
+  "expression": [
+    "DISTINCTCOUNT('public DimSupplier'[supplierid])",
+    ""
+  ],
+  "formatString": "0",
+  "lineageTag": "a7358cf9-e962-4ef9-b170-920cb31750ac"
+}

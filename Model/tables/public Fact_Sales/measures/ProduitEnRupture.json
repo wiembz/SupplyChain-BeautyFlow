@@ -1,0 +1,6 @@
+{
+  "name": "ProduitEnRupture",
+  "expression": "COUNTROWS(FILTER('public Fact_Stock', 'public Fact_Stock'[TotalInventory]= 0))",
+  "formatString": "0",
+  "lineageTag": "1095946d-a96b-49b1-bb73-f63b97b1ad68"
+}

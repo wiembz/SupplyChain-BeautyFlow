@@ -1,0 +1,14 @@
+{
+  "name": "Capacity Utilization",
+  "expression": [
+    "DIVIDE(SUM('public Fact_Production'[QuantityInventory]), SUM('public Fact_Production'[CapacityWarehouse]))",
+    ""
+  ],
+  "lineageTag": "1382ed33-ed9e-4639-98c0-396996cf82a4",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

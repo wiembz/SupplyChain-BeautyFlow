@@ -1,0 +1,17 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "LM",
+  "dataType": "int64",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[LM]",
+  "formatString": "0",
+  "lineageTag": "e95ca343-9860-4834-8890-935056f429d4",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    }
+  ]
+}

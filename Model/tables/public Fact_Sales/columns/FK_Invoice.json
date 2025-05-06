@@ -1,0 +1,14 @@
+{
+  "name": "FK_Invoice",
+  "dataType": "int64",
+  "sourceColumn": "FK_Invoice",
+  "formatString": "0",
+  "lineageTag": "6407d180-8957-4ba0-8717-dca92b7f4342",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "public DimGeo",
+  "lineageTag": "7a680afa-ea03-4600-99e8-611faa057529",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "Page1",
+  "dataType": "int64",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[Page1]",
+  "formatString": "0",
+  "lineageTag": "75fc4006-8e4d-40a7-82ee-7b0e14f8969d",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

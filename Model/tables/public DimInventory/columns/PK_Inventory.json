@@ -1,0 +1,14 @@
+{
+  "name": "PK_Inventory",
+  "dataType": "int64",
+  "sourceColumn": "PK_Inventory",
+  "formatString": "0",
+  "lineageTag": "f74aecd6-9cda-41ef-a1e3-0468ee3c6397",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

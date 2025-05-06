@@ -1,0 +1,14 @@
+{
+  "name": "%_Over_Utilized",
+  "expression": [
+    "DIVIDE([Over_Utilized_Warehouses], [Total_Warehouses])",
+    ""
+  ],
+  "lineageTag": "0c6bb363-4e71-4ec0-a270-ef0c3897d172",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

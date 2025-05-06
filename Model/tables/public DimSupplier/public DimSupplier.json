@@ -1,0 +1,10 @@
+{
+  "name": "public DimSupplier",
+  "lineageTag": "1f51c3e2-7f85-4630-bff6-d5d96cdec381",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

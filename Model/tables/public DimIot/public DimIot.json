@@ -1,0 +1,10 @@
+{
+  "name": "public DimIot",
+  "lineageTag": "29fcdc1d-a86e-43e9-ae4c-8c1b1ea70bda",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

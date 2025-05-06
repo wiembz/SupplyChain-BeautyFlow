@@ -1,0 +1,17 @@
+{
+  "name": "UnitPriceOfSelling",
+  "dataType": "double",
+  "sourceColumn": "UnitPriceOfSelling",
+  "lineageTag": "4f0d47cc-302a-4d82-bd4a-c6bde1db6dc9",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

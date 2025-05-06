@@ -1,0 +1,23 @@
+{
+  "name": "Over_Utilized_Warehouses",
+  "expression": [
+    "",
+    "CALCULATE(",
+    "    COUNTROWS('public DimWarehouses'),",
+    "    FILTER(",
+    "        'public DimWarehouses',",
+    "        DIVIDE(",
+    "            CALCULATE(SUM('public Fact_Stock'[QuantityInventory])),",
+    "            CALCULATE(SUM('public Fact_Stock'[CapacityWarehouse]))",
+    "        ) > 0.9",
+    "    )",
+    ")"
+  ],
+  "lineageTag": "2468ddb5-776f-46e3-bdd3-4924cfd34dc1",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Fk_Start_Time",
+  "dataType": "int64",
+  "sourceColumn": "Fk_Start_Time",
+  "formatString": "0",
+  "lineageTag": "f73cb8d2-b793-4218-9ffc-b1e08e4487bc",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    }
+  ]
+}

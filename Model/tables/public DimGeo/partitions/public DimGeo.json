@@ -1,0 +1,15 @@
+{
+  "name": "public DimGeo",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = PostgreSQL.Database(\"localhost\", \"DIMENSIONS\"),",
+      "    public_DimGeo = Source{[Schema=\"public\",Item=\"DimGeo\"]}[Data],",
+      "    #\"Personnalisée ajoutée\" = Table.AddColumn(public_DimGeo, \"Personnalisé\", each [address] & \",\" & [Location])",
+      "in",
+      "    #\"Personnalisée ajoutée\""
+    ]
+  }
+}

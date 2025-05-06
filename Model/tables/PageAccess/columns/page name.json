@@ -1,0 +1,16 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "page name",
+  "dataType": "string",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[page name]",
+  "lineageTag": "30fc746a-7ea9-4221-a035-428705b489be",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

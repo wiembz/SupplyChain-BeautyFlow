@@ -1,0 +1,11 @@
+{
+  "name": "Total Sales Income",
+  "expression": "SUM('public Fact_Sales'[TotalAmount])",
+  "lineageTag": "783330a8-d7c2-4b12-b3f3-1ecf961bfd2d",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

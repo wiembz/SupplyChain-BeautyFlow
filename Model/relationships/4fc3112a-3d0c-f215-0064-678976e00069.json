@@ -1,0 +1,7 @@
+{
+  "name": "4fc3112a-3d0c-f215-0064-678976e00069",
+  "fromTable": "public Fact_Stock",
+  "fromColumn": "FK_Inventory",
+  "toTable": "public DimInventory",
+  "toColumn": "PK_Inventory"
+}

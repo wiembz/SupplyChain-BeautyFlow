@@ -1,0 +1,22 @@
+{
+  "name": "%_Stock_By_Type_Warehouse",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    SUM('public Fact_Stock'[QuantityInventory]),",
+    "    CALCULATE(",
+    "        SUM('public Fact_Stock'[QuantityInventory]),",
+    "        REMOVEFILTERS('public DimWarehouses'[warehousename])",
+    "    ),",
+    "    0",
+    ")",
+    ""
+  ],
+  "lineageTag": "c0b7a6c8-943d-409f-be8c-ac67d41313ff",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

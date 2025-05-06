@@ -1,0 +1,15 @@
+{
+  "name": "public DimWarehouses",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = PostgreSQL.Database(\"localhost\", \"DIMENSIONS\"),",
+      "    public_DimWarehouses = Source{[Schema=\"public\",Item=\"DimWarehouses\"]}[Data],",
+      "    #\"Colonnes supprimées\" = Table.RemoveColumns(public_DimWarehouses,{\"warehouseid\"})",
+      "in",
+      "    #\"Colonnes supprimées\""
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Avg Price Last Month",
+  "expression": [
+    "",
+    "CALCULATE(",
+    "    [Avg Unit Price Raw Material],",
+    "    FILTER(",
+    "        ALL('public DimDate'),",
+    "        'public DimDate'[Month] = MONTH(TODAY()) - 1",
+    "    )",
+    ")",
+    ""
+  ],
+  "lineageTag": "b732c4f0-035a-463b-ba9e-3942472c3fee",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

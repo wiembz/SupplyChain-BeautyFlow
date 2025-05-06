@@ -1,0 +1,13 @@
+{
+  "name": "Sensor_ID",
+  "dataType": "string",
+  "sourceColumn": "Sensor_ID",
+  "lineageTag": "bc84127e-b7a0-431f-b963-f13084c09466",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

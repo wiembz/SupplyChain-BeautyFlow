@@ -1,0 +1,7 @@
+{
+  "name": "ecbe4d16-5599-8e5c-839e-14229306e84d",
+  "fromTable": "public Fact_Sales",
+  "fromColumn": "Fk_Supplier",
+  "toTable": "public DimSupplier",
+  "toColumn": "Pk_Supplier"
+}

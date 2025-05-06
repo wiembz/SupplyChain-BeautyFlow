@@ -1,0 +1,9 @@
+{
+  "name": "Price_With_Trend",
+  "expression": [
+    "",
+    "FORMAT([Avg Unit Price Raw Material], \"€#,##0.00\") & \" \" & [Price_Change_Percent]",
+    ""
+  ],
+  "lineageTag": "6070e8ff-c13e-4bb2-81cb-60b8330508de"
+}

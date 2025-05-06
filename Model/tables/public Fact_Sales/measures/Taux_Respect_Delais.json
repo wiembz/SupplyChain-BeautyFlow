@@ -1,0 +1,13 @@
+{
+  "name": "Taux_Respect_Delais",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    [Livraisons_À_Temps],",
+    "    COUNTROWS('public Fact_Sales'),",
+    "    0",
+    ")",
+    ""
+  ],
+  "lineageTag": "83f3b322-366f-470f-8a5c-b473a5169f49"
+}

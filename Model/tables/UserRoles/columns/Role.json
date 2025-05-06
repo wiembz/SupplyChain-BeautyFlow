@@ -1,0 +1,13 @@
+{
+  "name": "Role",
+  "dataType": "string",
+  "sourceColumn": "Role",
+  "lineageTag": "f073765b-457a-4a54-be26-6c00c5fadc26",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

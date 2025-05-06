@@ -1,0 +1,21 @@
+{
+  "type": "calculated",
+  "name": "Mois",
+  "dataType": "string",
+  "isHidden": true,
+  "expression": "FORMAT([Date], \"MMMM\")",
+  "sortByColumn": "NoMois",
+  "lineageTag": "fc604d9d-ac34-411b-97fb-7ea25dab713b",
+  "dataCategory": "Months",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "TemplateId",
+      "value": "Month"
+    }
+  ]
+}

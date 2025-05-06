@@ -1,0 +1,17 @@
+{
+  "name": "Total__TND",
+  "dataType": "double",
+  "sourceColumn": "Total__TND",
+  "lineageTag": "3ed25e8f-c06d-409a-9e38-ecd008b2632c",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

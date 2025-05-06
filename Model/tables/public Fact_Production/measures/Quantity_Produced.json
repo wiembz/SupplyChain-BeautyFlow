@@ -1,0 +1,9 @@
+{
+  "name": "Quantity_Produced",
+  "expression": [
+    "SUM('public Fact_Production'[QuantityInventory])",
+    ""
+  ],
+  "formatString": "0",
+  "lineageTag": "40b530c5-c132-4714-897d-0b233066488b"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Color_Status",
+  "expression": [
+    "",
+    "SWITCH(TRUE(),",
+    "    [Price_Change_Percent] > 0.10, \"⬆️\",",
+    "    [Price_Change_Percent] < -0.10, \"⬇️\",",
+    "    \"➡️\"",
+    ")",
+    ""
+  ],
+  "lineageTag": "a76aa97b-63b9-448f-aaa2-afe10950ccee"
+}

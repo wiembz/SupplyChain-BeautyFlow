@@ -1,0 +1,14 @@
+{
+  "name": "Fk_OrderDate",
+  "dataType": "int64",
+  "sourceColumn": "Fk_OrderDate",
+  "formatString": "0",
+  "lineageTag": "2f801bd1-dbeb-4648-bc4b-2192bf0ea3bb",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

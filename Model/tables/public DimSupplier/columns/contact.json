@@ -1,0 +1,14 @@
+{
+  "name": "contact",
+  "dataType": "int64",
+  "sourceColumn": "contact",
+  "formatString": "0",
+  "lineageTag": "926b2d81-77cf-425c-9fcc-2a3fa76845d2",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "CapacityWarehouse",
+  "dataType": "int64",
+  "sourceColumn": "CapacityWarehouse",
+  "formatString": "0",
+  "lineageTag": "d52e9aa3-fc04-4d6c-8e19-9fef40b28b1e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    }
+  ]
+}

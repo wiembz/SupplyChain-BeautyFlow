@@ -1,0 +1,13 @@
+{
+  "name": "Price_Variation_Color",
+  "expression": [
+    "",
+    "SWITCH(TRUE(),",
+    "    [Price Variation] > 0.10, \"Red\",           ",
+    "    [Price Variation] < -0.10, \"DarkGreen\",    ",
+    "    TRUE, \"Green\"                                   ",
+    ")",
+    ""
+  ],
+  "lineageTag": "589d5d63-25ce-45af-a541-f393e4b1e383"
+}

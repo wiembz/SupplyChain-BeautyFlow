@@ -1,0 +1,19 @@
+{
+  "name": "DemandCoverageRate",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    SUM('public Fact_Stock'[QuantityInventory]),",
+    "    SUM('public Fact_Sales'[quantityDemanded]),",
+    "    0",
+    ") * 100",
+    ""
+  ],
+  "lineageTag": "1d56207d-f9b9-4144-9d49-be5bbfa062ad",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

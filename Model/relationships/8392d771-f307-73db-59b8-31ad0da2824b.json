@@ -1,0 +1,8 @@
+{
+  "name": "8392d771-f307-73db-59b8-31ad0da2824b",
+  "fromTable": "public DimInventory",
+  "fromColumn": "productid",
+  "toTable": "public DimIot",
+  "toColumn": "productid",
+  "isActive": false
+}

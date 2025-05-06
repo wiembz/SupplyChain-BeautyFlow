@@ -1,0 +1,14 @@
+{
+  "name": "Fk_Warehouses",
+  "dataType": "int64",
+  "sourceColumn": "Fk_Warehouses",
+  "formatString": "0",
+  "lineageTag": "ea292e37-c627-4a77-be7c-9c932657ea95",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

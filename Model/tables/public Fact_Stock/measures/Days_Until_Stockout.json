@@ -1,0 +1,19 @@
+{
+  "name": "Days_Until_Stockout",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    SUM('public Fact_Stock'[QuantityInventory]),",
+    "    [Avg_Daily_Sales],",
+    "    0",
+    ")",
+    ""
+  ],
+  "lineageTag": "c7a58346-67ac-41cd-8285-9a2373483f84",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

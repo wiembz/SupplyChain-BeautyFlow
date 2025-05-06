@@ -1,0 +1,20 @@
+{
+  "name": "CPO",
+  "modelPermission": "read",
+  "tablePermissions": [
+    {
+      "name": "PageAccess",
+      "filterExpression": "[CPO] == 1"
+    },
+    {
+      "name": "Table (2)",
+      "filterExpression": "[1111] == Blank()"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "385cfb0ef0224a2681a5c90f8505cea4"
+    }
+  ]
+}

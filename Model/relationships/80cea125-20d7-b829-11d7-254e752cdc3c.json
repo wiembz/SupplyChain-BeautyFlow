@@ -1,0 +1,7 @@
+{
+  "name": "80cea125-20d7-b829-11d7-254e752cdc3c",
+  "fromTable": "public Fact_Stock",
+  "fromColumn": "Fk_Products",
+  "toTable": "public DimProducts",
+  "toColumn": "Pk_Products"
+}

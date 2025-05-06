@@ -1,0 +1,13 @@
+{
+  "name": "Magasin",
+  "dataType": "string",
+  "sourceColumn": "Magasin",
+  "lineageTag": "bcc3fba7-7a4d-4093-94d0-2f904008bbaf",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

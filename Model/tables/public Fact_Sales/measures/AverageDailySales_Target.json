@@ -1,0 +1,9 @@
+{
+  "name": "AverageDailySales_Target",
+  "expression": [
+    "1000",
+    ""
+  ],
+  "formatString": "0",
+  "lineageTag": "c8269954-d817-41d9-93f7-6e7af4349fc8"
+}

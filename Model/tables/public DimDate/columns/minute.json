@@ -1,0 +1,14 @@
+{
+  "name": "minute",
+  "dataType": "int64",
+  "sourceColumn": "minute",
+  "formatString": "0",
+  "lineageTag": "ff692130-173b-4695-af29-d140a6431f42",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "COO",
+  "dataType": "int64",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "[COO]",
+  "formatString": "0",
+  "lineageTag": "fc6dc35a-0efa-4349-a895-6078d765810c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    }
+  ]
+}

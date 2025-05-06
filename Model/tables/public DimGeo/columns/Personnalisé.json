@@ -1,0 +1,13 @@
+{
+  "name": "Personnalisé",
+  "dataType": "string",
+  "sourceColumn": "Personnalisé",
+  "lineageTag": "3fa6580c-d92e-42ed-848e-5c0af5be7d8d",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

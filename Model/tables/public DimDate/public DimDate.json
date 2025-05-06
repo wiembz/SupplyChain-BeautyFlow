@@ -1,0 +1,10 @@
+{
+  "name": "public DimDate",
+  "lineageTag": "c0b04a94-5092-445d-9cec-80e5704cefed",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "SCPM",
+  "modelPermission": "read",
+  "tablePermissions": [
+    {
+      "name": "PageAccess",
+      "filterExpression": "[SCPM] == 1"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "6ebb7318ec7b4039bc689691ad4af5eb"
+    }
+  ]
+}

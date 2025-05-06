@@ -1,0 +1,13 @@
+{
+  "name": "RawCost_Color",
+  "expression": [
+    "",
+    "IF(",
+    "    [Total Raw Material Cost] > [Total Sales Income],",
+    "    \"Red\",",
+    "    \"Green\"",
+    ")",
+    ""
+  ],
+  "lineageTag": "eaabf41e-e1f4-4354-9070-75f2337b3105"
+}

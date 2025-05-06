@@ -1,0 +1,13 @@
+{
+  "name": "Location",
+  "dataType": "string",
+  "sourceColumn": "Location",
+  "lineageTag": "dfe9b804-e2af-4b90-9136-3479fcfaa61d",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "9c681486-d7c2-1bdb-3251-3853e83b2b3b",
+  "fromTable": "public Fact_Production",
+  "fromColumn": "Fk_ExpiryDate",
+  "toTable": "public DimDate",
+  "toColumn": "date_id",
+  "isActive": false
+}

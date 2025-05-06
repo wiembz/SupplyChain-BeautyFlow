@@ -1,0 +1,14 @@
+{
+  "name": "Avg Unit Price Raw Material",
+  "expression": [
+    "AVERAGE('public Fact_Production'[UnitPriceRawMaterial])",
+    ""
+  ],
+  "lineageTag": "e3525ad1-824c-4c5e-b2c9-0da7f18485d7",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

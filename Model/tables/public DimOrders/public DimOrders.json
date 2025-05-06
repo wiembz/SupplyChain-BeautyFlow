@@ -1,0 +1,14 @@
+{
+  "name": "public DimOrders",
+  "lineageTag": "86cde04e-c1cb-4eaf-a0a7-f95763a1bbad",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

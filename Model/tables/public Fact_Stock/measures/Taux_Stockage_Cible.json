@@ -1,0 +1,11 @@
+{
+  "name": "Taux_Stockage_Cible",
+  "expression": "0.7",
+  "lineageTag": "10dea2f5-4d2f-45f6-849b-0fbb4ab8953f",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

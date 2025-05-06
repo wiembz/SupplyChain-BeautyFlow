@@ -1,0 +1,14 @@
+{
+  "name": "PK_Invoice",
+  "dataType": "int64",
+  "sourceColumn": "PK_Invoice",
+  "formatString": "0",
+  "lineageTag": "2ac005b7-8f9f-4d7b-8302-143458656e6b",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

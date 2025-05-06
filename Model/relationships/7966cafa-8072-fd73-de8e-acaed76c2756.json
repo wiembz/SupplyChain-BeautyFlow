@@ -1,0 +1,7 @@
+{
+  "name": "7966cafa-8072-fd73-de8e-acaed76c2756",
+  "fromTable": "public Fact_Sales",
+  "fromColumn": "Fk_Products",
+  "toTable": "public DimProducts",
+  "toColumn": "Pk_Products"
+}

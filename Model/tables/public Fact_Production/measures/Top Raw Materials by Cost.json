@@ -1,0 +1,15 @@
+{
+  "name": "Top Raw Materials by Cost",
+  "expression": [
+    "",
+    "SUMX('public Fact_Production', [QuantityInventory] * [UnitPriceRawMaterial])",
+    ""
+  ],
+  "lineageTag": "2baadde8-5e3d-4aa5-95f9-2edfdb0d1c23",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

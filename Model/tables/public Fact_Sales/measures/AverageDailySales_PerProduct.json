@@ -1,0 +1,21 @@
+{
+  "name": "AverageDailySales_PerProduct",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    SUMX('public Fact_Sales','public Fact_Sales'[Quantity Sold]),",
+    "    CALCULATE(",
+    "        DISTINCTCOUNT('public Fact_Sales'[Fk_DateInvoice]),",
+    "        ALLEXCEPT('public Fact_Sales', 'public Fact_Sales'[Fk_Products])",
+    "    )",
+    ")",
+    ""
+  ],
+  "lineageTag": "011cab38-c39e-4cf7-a109-95bf914f6ccd",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

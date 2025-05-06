@@ -1,0 +1,19 @@
+{
+  "name": "Under_Utilized_Warehouses",
+  "expression": [
+    "",
+    "CALCULATE(",
+    "    COUNTROWS('public DimWarehouses'),",
+    "    FILTER(",
+    "        'public DimWarehouses',",
+    "        DIVIDE(",
+    "            CALCULATE(SUM('public Fact_Stock'[QuantityInventory])),",
+    "            CALCULATE(SUM('public Fact_Stock'[CapacityWarehouse]))",
+    "        ) < 0.5",
+    "    )",
+    ")",
+    ""
+  ],
+  "formatString": "0",
+  "lineageTag": "d9ed7d79-3f8a-463e-95ff-a0f494ccca7e"
+}

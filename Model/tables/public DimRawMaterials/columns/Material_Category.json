@@ -1,0 +1,13 @@
+{
+  "name": "Material_Category",
+  "dataType": "string",
+  "sourceColumn": "Material_Category",
+  "lineageTag": "2c3ddc6a-96c2-40ba-b91d-ddc6316be4b3",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Warehouse_Occupancy_Rate",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    SUM('public Fact_Stock'[QuantityInventory]),",
+    "    SUM('public Fact_Stock'[CapacityWarehouse]),",
+    "    0",
+    ")",
+    ""
+  ],
+  "lineageTag": "11f7673f-306b-4460-8cf2-db4ba60dc30d",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

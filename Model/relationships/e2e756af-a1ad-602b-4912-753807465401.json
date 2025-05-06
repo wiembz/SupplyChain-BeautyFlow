@@ -1,0 +1,7 @@
+{
+  "name": "e2e756af-a1ad-602b-4912-753807465401",
+  "fromTable": "public Fact_Production",
+  "fromColumn": "Fk_End_Time",
+  "toTable": "public DimDate",
+  "toColumn": "date_id"
+}

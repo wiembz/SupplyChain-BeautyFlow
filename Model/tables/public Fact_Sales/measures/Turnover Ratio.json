@@ -1,0 +1,11 @@
+{
+  "name": "Turnover Ratio",
+  "expression": "DIVIDE([Total Sales Income], [TotalInventory], 0)",
+  "lineageTag": "35fa41c8-1b79-42a8-b872-be21dc0b849b",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

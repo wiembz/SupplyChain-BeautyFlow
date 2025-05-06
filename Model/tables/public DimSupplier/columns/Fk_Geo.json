@@ -1,0 +1,19 @@
+{
+  "name": "Fk_Geo",
+  "dataType": "int64",
+  "sourceColumn": "Fk_Geo",
+  "formatString": "0",
+  "lineageTag": "2f509f3c-8cb4-4c60-a363-4e423ccd1435",
+  "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "IsHidden"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

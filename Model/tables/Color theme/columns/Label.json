@@ -1,0 +1,13 @@
+{
+  "name": "Label",
+  "dataType": "string",
+  "sourceColumn": "Label",
+  "lineageTag": "3200d27d-10f3-4e29-860e-69afae44db76",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

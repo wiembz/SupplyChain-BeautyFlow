@@ -1,0 +1,7 @@
+{
+  "name": "9eeea301-d94a-9b12-ca14-b98d082c447d",
+  "fromTable": "public Fact_Sales",
+  "fromColumn": "Fk_DateInvoice",
+  "toTable": "public DimDate",
+  "toColumn": "date_id"
+}

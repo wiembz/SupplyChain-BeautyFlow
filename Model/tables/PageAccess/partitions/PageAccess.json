@@ -1,0 +1,26 @@
+{
+  "name": "PageAccess",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": [
+      "",
+      "DATATABLE(",
+      "    \"page name\", STRING, ",
+      "    \"Page1\",INTEGER,",
+      "    \"CPO\", INTEGER,",
+      "    \"COO\", INTEGER,",
+      "    \"SCPM\", INTEGER,",
+      "    \"LM\", INTEGER,",
+      "    {",
+      "        {\"Chief Procurement Officer (CPO)\",     ,1,,, },",
+      "        {\"Chief Operation Officer (COO)\",        ,,1,, },",
+      "        {\"Supply Chain Planning Manager (SCPM)\" ,,,, 1, },",
+      "        {\"Logistic Manager (LM)\",              ,, , , 1},",
+      "        {\"Page1\",     ,1,,, }",
+      "    }",
+      ")",
+      ""
+    ]
+  }
+}

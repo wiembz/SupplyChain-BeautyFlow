@@ -1,0 +1,11 @@
+{
+  "name": "Warehouse_Occupancy_Target",
+  "expression": "0.50",
+  "lineageTag": "9c39df99-5b48-43bb-9373-996660dd5f1a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

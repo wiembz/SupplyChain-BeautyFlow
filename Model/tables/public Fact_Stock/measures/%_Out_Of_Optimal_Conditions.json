@@ -1,0 +1,25 @@
+{
+  "name": "%_Out_Of_Optimal_Conditions",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    CALCULATE(",
+    "        COUNTROWS('public Fact_Stock'),",
+    "        FILTER(",
+    "           'public Fact_Stock',",
+    "           'public Fact_Stock'[Temperature] < 15 || 'public Fact_Stock'[Temperature] > 25 || 'public Fact_Stock'[Humidity] > 65",
+    "        )",
+    "    ),",
+    "    COUNTROWS('public Fact_Stock'),",
+    "    0",
+    ")",
+    ""
+  ],
+  "lineageTag": "2e8b5e05-d885-426c-b548-b97811dbdb8a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

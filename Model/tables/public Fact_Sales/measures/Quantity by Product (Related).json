@@ -1,0 +1,12 @@
+{
+  "name": "Quantity by Product (Related)",
+  "expression": [
+    "",
+    "SUMX(",
+    "    RELATEDTABLE('public Fact_Sales'),",
+    "    'public Fact_Sales'[quantityDemanded]",
+    ")"
+  ],
+  "formatString": "0",
+  "lineageTag": "4da441e5-81e2-4c83-83e8-68d4da78cc63"
+}

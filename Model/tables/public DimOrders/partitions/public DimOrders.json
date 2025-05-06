@@ -1,0 +1,15 @@
+{
+  "name": "public DimOrders",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = PostgreSQL.Database(\"localhost\", \"DIMENSIONS\"),",
+      "    public_DimOrders = Source{[Schema=\"public\",Item=\"DimOrders\"]}[Data],",
+      "    #\"Colonnes supprimées\" = Table.RemoveColumns(public_DimOrders,{\"Fk_Geo\"})",
+      "in",
+      "    #\"Colonnes supprimées\""
+    ]
+  }
+}

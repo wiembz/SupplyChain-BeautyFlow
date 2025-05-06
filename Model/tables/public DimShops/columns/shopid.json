@@ -1,0 +1,13 @@
+{
+  "name": "shopid",
+  "dataType": "string",
+  "sourceColumn": "shopid",
+  "lineageTag": "3c42ab2d-67a0-46aa-a71a-fd8ca25d10cd",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

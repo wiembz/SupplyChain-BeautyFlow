@@ -1,0 +1,13 @@
+{
+  "name": "RawMaterialRiskLevel",
+  "expression": [
+    "",
+    "SWITCH(TRUE(),",
+    "    [RawMaterialToProductionRatio] > 0.8, \"High\",",
+    "    [RawMaterialToProductionRatio] > 0.6, \"Medium\",",
+    "    \"Low\"",
+    ")",
+    ""
+  ],
+  "lineageTag": "7be15876-57fd-4687-a1d1-bfd5af8e55a6"
+}

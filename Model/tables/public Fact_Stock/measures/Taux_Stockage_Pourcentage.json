@@ -1,0 +1,18 @@
+{
+  "name": "Taux_Stockage_Pourcentage",
+  "expression": [
+    "",
+    "DIVIDE(",
+    "    SUM('public Fact_Stock'[QuantityInventory]),",
+    "    SUM('public Fact_Stock'[CapacityWarehouse]),",
+    "    0",
+    ") "
+  ],
+  "lineageTag": "9c663650-690c-4622-b105-8fe27bc3f6db",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

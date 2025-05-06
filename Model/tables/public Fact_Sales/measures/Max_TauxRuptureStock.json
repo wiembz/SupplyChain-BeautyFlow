@@ -1,0 +1,9 @@
+{
+  "name": "Max_TauxRuptureStock",
+  "expression": [
+    "",
+    "MAXX(ALL('public Fact_Sales'), 'public Fact_Sales'[TauxRuptureStock])",
+    ""
+  ],
+  "lineageTag": "84c25a12-0fb7-44da-82b3-ab86bd747db0"
+}

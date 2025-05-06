@@ -1,0 +1,14 @@
+{
+  "name": "FK_Inventory",
+  "dataType": "int64",
+  "sourceColumn": "FK_Inventory",
+  "formatString": "0",
+  "lineageTag": "020561f0-8325-484c-a434-3239c6b19614",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

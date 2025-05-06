@@ -1,0 +1,14 @@
+{
+  "name": "1111",
+  "dataType": "int64",
+  "sourceColumn": "1111",
+  "formatString": "0",
+  "lineageTag": "2bcc9fab-45ef-4aaf-aa04-3fa004d3706f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Sales_Efficiency",
+  "expression": [
+    "",
+    "DIVIDE([Quantity_Sold], [Quantity_Produced])",
+    ""
+  ],
+  "lineageTag": "3d4823fa-2dbb-40c2-8290-582fa6a78d72",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Reference_Facture",
+  "dataType": "string",
+  "sourceColumn": "Reference_Facture",
+  "lineageTag": "e0e982da-38f4-464d-9abd-1c9a1a98c777",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

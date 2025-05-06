@@ -1,0 +1,14 @@
+{
+  "name": "is_weekend",
+  "dataType": "boolean",
+  "sourceColumn": "is_weekend",
+  "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+  "lineageTag": "3b6614b7-3cde-4ab5-937e-ebce7f01ba52",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "productid",
+  "dataType": "string",
+  "sourceColumn": "productid",
+  "lineageTag": "7adc03a8-200f-4a33-8450-a90f83cc9451",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}
