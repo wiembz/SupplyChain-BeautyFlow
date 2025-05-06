@@ -1,0 +1,24 @@
+name: Deploiement Power BI
+
+on:
+  push:
+    paths:
+      - '**.pbix'
+      - 'scripts/**'
+      - '.github/workflows/deploiement.yml'
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install Power BI modules
+      shell: pwsh
+      run: Install-Module -Name MicrosoftPowerBIMgmt -Scope CurrentUser -Force
+
+    - name: Run deployment script
+      shell: pwsh
+      run: ./scripts/deploiement.ps1
