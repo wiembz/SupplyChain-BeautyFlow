@@ -9,17 +9,17 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - name: Checkout repo
+    - name: Checkout repository
       uses: actions/checkout@v3
 
     - name: Install Power BI PowerShell module
-      shell: pwsh
+      shell: powershell
       run: |
         Install-Module -Name MicrosoftPowerBIMgmt -Force -Scope CurrentUser -AllowClobber
         Import-Module MicrosoftPowerBIMgmt
 
-    - name: Connect to Power BI and deploy
-      shell: pwsh
+    - name: Deploy Power BI report
+      shell: powershell
       run: |
         Connect-PowerBIServiceAccount
-        ./deploy_powerbi.ps1
+        .\deploy_powerbi.ps1
