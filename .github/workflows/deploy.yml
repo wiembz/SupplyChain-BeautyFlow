@@ -1,0 +1,25 @@
+name: Deploy Power BI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Install Power BI PowerShell module
+      shell: pwsh
+      run: |
+        Install-Module -Name MicrosoftPowerBIMgmt -Force -Scope CurrentUser -AllowClobber
+        Import-Module MicrosoftPowerBIMgmt
+
+    - name: Connect to Power BI and deploy
+      shell: pwsh
+      run: |
+        Connect-PowerBIServiceAccount
+        ./deploy_powerbi.ps1
