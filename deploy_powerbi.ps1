@@ -1,7 +1,7 @@
 # -------------------------------
 # CONFIGURATION
 # -------------------------------
-$pbixPath = "C:\PowerBI\deploy\SupplyChain.pbix"
+$pbixPath = "C:\PowerBI\deploy\SupplyChain-BeautyFlow\SupplyChain.pbix"
 $workspaceName = "DeploySupplyChain"
 $reportName = "SupplyChain"
 
