@@ -25,7 +25,7 @@ jobs:
         .\deploy_powerbi.ps1
 
     - name: Upload PDF as GitHub Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: powerbi-pdf
         path: SupplyChain.pdf
