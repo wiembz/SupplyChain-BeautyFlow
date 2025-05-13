@@ -1,4 +1,4 @@
-name: Deploy Power BI
+name: Deploy Power BI and Export PDF
 
 on:
   push:
@@ -9,17 +9,23 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - name: Checkout repository
+    - name: Checkout repo
       uses: actions/checkout@v3
 
-    - name: Install Power BI PowerShell module
+    - name: Install Power BI module
       shell: powershell
       run: |
         Install-Module -Name MicrosoftPowerBIMgmt -Force -Scope CurrentUser -AllowClobber
         Import-Module MicrosoftPowerBIMgmt
 
-    - name: Deploy Power BI report
+    - name: Run deploy and export PDF
       shell: powershell
       run: |
         Connect-PowerBIServiceAccount
         .\deploy_powerbi.ps1
+
+    - name: Upload PDF as GitHub Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: powerbi-pdf
+        path: SupplyChain.pdf
